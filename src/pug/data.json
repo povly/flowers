@@ -74,5 +74,55 @@
 			"title":"8+ лет",
 			"desc":"опыта луковиц выращено нашими руками, все луковицы проходили тщательный отбор "
 		}
+	],
+	"stocks": [
+		{
+			"cardClass": "card__img-hover",
+			"img":"img/stock/1.png",
+			"img2":"img/stock/2.png",
+			"title":"Callisto"
+		}, 
+		{
+			"cardClass": "",
+			"img":"img/stock/2.png",
+			"img2":"",
+			"title":"Alexander Woollcott"
+		}, 
+		{
+			"cardClass": "",
+			"img":"img/stock/3.png",
+			"img2":"",
+			"title":"Abalone Pink"
+		}, 
+		{
+			"cardClass": "",
+			"img":"img/stock/4.png",
+			"img2":"",
+			"title":"Angela Jo"
+		}, 
+		{
+			"cardClass": "",
+			"img":"img/stock/5.png",
+			"img2":"",
+			"title":"Abalone Pink"
+		},
+		{
+			"cardClass": "",
+			"img":"img/stock/6.png",
+			"img2":"",
+			"title":"Abalone Pink"
+		},
+		{
+			"cardClass": "",
+			"img":"img/stock/7.png",
+			"img2":"",
+			"title":"Abalone Pink"
+		},
+		{
+			"cardClass": "",
+			"img":"img/stock/8.png",
+			"img2":"",
+			"title":"Abalone Pink"
+		}
 	]
 }

@@ -65,8 +65,20 @@
 				.main-about__tags
 					each about in abouts
 						+mainAboutTag(about.img, about.imgClass, about.title, about.desc)
-
-
+.main-stock.bg(style="background-image:url('img/stock/bg.png')")
+	.container
+		h2.section__title.section__title_olive.relative Ассортимент агротехники
+		.section__subtitle.main-stock__subtitle От красного до белого, от простого до махрового, от низкого до высокого, от новенького до традиционного, <span>каждому свое.</span>
+		.row.main-stock__row
+			each stock in stocks
+				.col-lg-3.card__col
+					+cardItem(stock.cardClass, stock.img, stock.img2, stock.title)
+		.btn.main-stock__btn.flex
+			.btn__title Подробнее
+			<svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
 
 
 
