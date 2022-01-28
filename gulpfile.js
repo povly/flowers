@@ -1,3 +1,5 @@
+const { data } = require('jquery');
+
 let preprocessor = 'sass';
 const { src, dest, parallel, series, watch } = require('gulp'),
 			browserSync = require('browser-sync').create(),
@@ -11,7 +13,9 @@ const { src, dest, parallel, series, watch } = require('gulp'),
 			ttf2woff = require('gulp-ttf2woff'),
 			ttf2woff2 = require("gulp-ttftowoff2"),
 			changed = require('gulp-changed'),
-			image = require('gulp-image');
+			image = require('gulp-image')
+			dataf = require('gulp-data')
+			fs = require('fs');
 
 function optimizeImage(){
 	return src('src/images/**/*')
@@ -49,7 +53,10 @@ function pugg() {
 	return src([
 		'src/pug/pages/**/*.pug',
 	])
-	.pipe(pug({pretty: true}))
+	.pipe(dataf(function(file){
+		return JSON.parse(fs.readFileSync('./src/pug/data.json'))
+	}))
+	.pipe(pug({pretty: true,}))
 	.pipe(dest('app/'))
 	.pipe(browserSync.stream())
 }
@@ -82,6 +89,7 @@ function startwatch() {
 	watch(['src/pug/pages/**/*.pug', 'src/pug/includes/**/*.pug', 'src/pug/includes/**/*.pug'], pugg);
 	watch('src/' + preprocessor + '/**/*', styles);
 	watch('src/**/*.html').on('change', browserSync.reload);
+	watch('src/pug/data.json', pugg);
 }
 
 function styles() {
