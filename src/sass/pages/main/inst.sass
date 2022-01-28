@@ -1,0 +1,83 @@
+.main
+	&-inst
+		padding-top: 95px
+		padding-bottom: 115px
+		color: var(--color-white)
+		&__title
+			align-items: center
+			margin-bottom: 29px
+			&::after
+				display: none
+			&-span
+				&::after
+					content: ''
+					width: calc(100% + 4px)
+					height: 3px
+					background-color: var(--color-olive)
+					border-radius: 20px
+					position: absolute
+					bottom: -5px
+					left: -2px
+			&-img
+				max-width: 203px
+				margin-left: 12px
+		&__left
+			max-width: 186px
+			margin-right: 134px
+		&__avatar
+			border: 1px solid rgba(255, 255, 255, 0.5)
+			width: 166px
+			height: 166px
+			border-radius: 100%
+			padding: 3px
+			margin-bottom: 10px
+			&-img
+				height: 100%
+		&__name
+			margin-bottom: 5px
+			font-size: 20px
+			line-height: 23px
+			font-weight: normal
+			display: table
+			&_line
+				text-decoration: underline
+		&__btn
+			margin-top: 25px
+			max-width: 100%
+		&__right
+			max-width: calc(100% - 186px - 134px)
+		&__card
+			color: var(--color-black)
+			justify-content: space-between
+			&-item
+				border-radius: 4px
+				background-color: var(--color-white)
+				max-width: calc(100% / 2 - 10px)
+				padding: 10px 10px 17px
+			&-top
+				align-items: center
+				margin-bottom: 5px
+			&-logo
+				width: 26px
+				height: 26px
+				border-radius: 100%
+				margin-right: 5px
+			&-right
+				margin-left: auto
+				span
+					display: block
+					background-color: var(--color-black)
+					width: 2px
+					height: 2px
+					border-radius: 100%
+					&:not(:last-child)
+						margin-right: 2px
+			&-img
+				height: 202px
+				margin-bottom: 10px
+			&-title, &-desc
+				font-weight: normal
+				font-size: 15px
+				line-height: 18px
+			&-desc
+				max-width: 255px
