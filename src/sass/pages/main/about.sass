@@ -1,0 +1,83 @@
+.main
+	&-about
+		padding-top: 45px
+		&__img
+			min-height: 445px
+			&-item
+				max-width: calc(100% / 2)
+				height: 100%
+				top: 0
+			&-tag
+				background: rgba(85, 100, 68, 0.8)
+				border-radius: 4px
+				font-size: 14px
+				line-height: 16px
+				color: var(--color-white)
+				padding: 7px 6px
+				z-index: 2
+				&-1
+					top: 65px
+					left: 13px
+				&-2
+					bottom: 119px
+					right: 65px
+			&-left
+				left: 0
+				border-top-left-radius: 60px
+				border-bottom-left-radius: 4px
+			&-right
+				right: 0
+				border-bottom-right-radius: 60px
+				border-top-right-radius: 4px
+		&__icon
+			max-width: 39px
+			z-index: 2
+			&-left
+				left: 0
+				top: 0
+			&-right
+				bottom: 0
+				right: 0
+		&__tag
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2)
+			border-radius: 4px 
+			padding: 3px
+			transition: var(--transition-default)
+			&:not(:last-child)
+				margin-bottom: 15px
+			&:hover
+				background-color: var(--color-olive)
+				.main
+					&-about
+						&__tag
+							&-inner
+								border-color: rgba(255, 255, 255, 0.4)
+							&-title
+								color: var(--color-white)
+							&-desc
+								color: rgba(255, 255, 255, 0.4)
+			&-inner
+				border-radius: 4px
+				border: 1px solid transparent
+				padding: 16px 25px 16px 20px
+			&-left
+				max-width: 60px
+				margin-right: 20px
+			&-right
+				max-width: calc(100% - 60px - 20px)
+			&-img
+				height: 60px
+				background-size: contain
+				background-position: center
+				&_radius
+					border-radius: 100%
+					background-size: cover
+			&-title
+				font-weight: bold
+				font-size: 20px
+				line-height: 23px
+				margin-bottom: 5px
+			&-desc
+				font-size: 15px
+				line-height: 16px
+				color: rgba(0, 0, 0, 0.4)

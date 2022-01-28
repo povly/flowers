@@ -48,6 +48,25 @@
 								span
 						.main-inst__card-img.bg(style="background-image:url('img/inst/2.jpg')")
 						.main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
+.main-about
+	.container
+		h2.section__title.section__title_olive.relative О нас
+		.section__subtitle Род <span>Paeonia</span> имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались большим уважением.
+		.row.main-about__row
+			.col-lg-6
+				.main-about__img.relative.width__full
+					img(src="img/about/left.png", alt="").main-about__icon.main-about__icon-left.absolute
+					img(src="img/about/right.png", alt="").main-about__icon.main-about__icon-right.absolute
+					.main-about__img-tag.main-about__img-tag-1.absolute Дюбина Валентина
+					.main-about__img-tag.main-about__img-tag-2.absolute Дюбина Валентина
+					.main-about__img-item.main-about__img-left.bg.width__full.absolute(style="background-image:url('img/about/1.jpg')")
+					.main-about__img-item.main-about__img-right.bg.width__full.absolute(style="background-image:url('img/about/2.jpg')")
+			.col-lg-6
+				.main-about__tags
+					each about in abouts
+						+mainAboutTag(about.img, about.imgClass, about.title, about.desc)
+
+
 
 
 
