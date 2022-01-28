@@ -1,7 +1,7 @@
-.main-collection
+section.main-collection
 	.container
 		h2.section__title.section__title_olive.relative Наша коллекция
-		.section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контолем.
+		.section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контролем.
 		.main-collection__row.row
 			each card in cards
 				.col-lg-3.card__col
@@ -12,7 +12,7 @@
 				<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>
-.main-inst.bg(style="background-image:url('img/inst/bg.png')")
+section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
 	.container
 		h2.main-inst__title.section__title.flex
 			span.main-inst__title-span.relative Мы в
@@ -28,7 +28,7 @@
 					.btn__title В профиль
 			.main-inst__right.width__full
 				.main-inst__card.flex
-					a(href="#!").main-inst__card-item.width__full
+					.main-inst__card-item.width__full
 						.main-inst__card-top.flex
 							.main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
 							.main-inst__card-title Pioni.pro
@@ -38,7 +38,7 @@
 								span
 						.main-inst__card-img.bg(style="background-image:url('img/inst/1.jpg')")
 						.main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
-					a(href="#!").main-inst__card-item.width__full
+					.main-inst__card-item.width__full
 						.main-inst__card-top.flex
 							.main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
 							.main-inst__card-title Pioni.pro
@@ -48,7 +48,7 @@
 								span
 						.main-inst__card-img.bg(style="background-image:url('img/inst/2.jpg')")
 						.main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
-.main-about
+section.main-about
 	.container
 		h2.section__title.section__title_olive.relative О нас
 		.section__subtitle.main-about__subtitle <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
@@ -65,7 +65,7 @@
 				.main-about__tags
 					each about in abouts
 						+mainAboutTag(about.img, about.img2, about.imgClass, about.title, about.desc)
-.main-stock.bg(style="background-image:url('img/stock/bg.png')")
+section.main-stock.bg(style="background-image:url('img/stock/bg.png')")
 	.container
 		h2.section__title.section__title_olive.relative Ассортимент агротехники
 		.section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.
@@ -79,7 +79,4 @@
 				<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>
-
-
-
 
