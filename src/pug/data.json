@@ -1,41 +1,49 @@
 {
 	"cards": [
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/4.jpg",
 			"img2":"img/cart/2.jpg",
 			"title":"Callisto"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/2.jpg",
 			"img2":"img/cart/5.jpg",
 			"title":"Alexander Woollcott"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/3.jpg",
 			"img2":"img/cart/4.jpg",
 			"title":"Abalone Pink"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/4.jpg",
 			"img2":"img/cart/1.jpg",
 			"title":"Angela Jo"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/5.jpg",
 			"img2":"img/cart/3.jpg",
 			"title":"Abalone Pink"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/6.jpg",
 			"img2":"img/cart/7.jpg",
 			"title":"Angela Jo"
 		},
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/7.jpg",
 			"img2":"img/cart/8.jpg",
 			"title":"Alexander Woollcott"
 		}, 
 		{
+			"cardClass": "card__img-hover",
 			"img":"img/cart/8.jpg",
 			"img2":"img/cart/1.jpg",
 			"title":"Callisto"

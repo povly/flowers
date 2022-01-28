@@ -1,7 +1,7 @@
-mixin cardItem(img, img2, title)
+mixin cardItem(cardClass, img, img2, title)
 	.card.relative
 		.card__inner
-			.card__img.relative
+			.card__img.relative(class=cardClass)
 				a(href="#!") 
 					.card__img-item.card__img-1.absolute(style="background-image: url('"+ img + "')")
 					.card__img-item.card__img-2.absolute(style="background-image: url('"+ img2 + "')")
