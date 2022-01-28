@@ -52,25 +52,29 @@
 	"abouts": [
 		{
 			"img":"img/about/1.png",
-			"imgClass":"",
+			"img2":"img/about/11.png",
+			"imgClass":"main-about__tag_icon",
 			"title":"Более 500",
 			"desc":"видов луковиц выращено нашими руками, все луковицы проходили тщательный отбор "
 		},
 		{
 			"img":"img/about/2.png",
-			"imgClass":"main-about__tag-img_radius",
+			"img2":"",
+			"imgClass":"main-about__tag_default",
 			"title":"17+ лет",
 			"desc":"опыта луковиц выращено нашими руками, все луковицы проходили тщательный отбор "
 		},
 		{
 			"img":"img/about/3.png",
-			"imgClass":"",
+			"img2":"img/about/33.png",
+			"imgClass":"main-about__tag_icon",
 			"title":"100%",
 			"desc":"видов луковиц выращено нашими руками, все луковицы проходили тщательный отбор "
 		},
 		{
 			"img":"img/about/4.png",
-			"imgClass":"main-about__tag-img_radius",
+			"img2":"",
+			"imgClass":"main-about__tag_default",
 			"title":"8+ лет",
 			"desc":"опыта луковиц выращено нашими руками, все луковицы проходили тщательный отбор "
 		}

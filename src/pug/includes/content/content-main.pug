@@ -1,7 +1,7 @@
 .main-collection
 	.container
 		h2.section__title.section__title_olive.relative Наша коллекция
-		.section__subtitle От красного до белого, от простого до махрового, от низкого до высокого, от новенького до традиционного, <span>каждому свое.</span>
+		.section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контолем.
 		.main-collection__row.row
 			each card in cards
 				.col-lg-3.card__col
@@ -51,7 +51,7 @@
 .main-about
 	.container
 		h2.section__title.section__title_olive.relative О нас
-		.section__subtitle Род <span>Paeonia</span> имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались большим уважением.
+		.section__subtitle.main-about__subtitle <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
 		.row.main-about__row
 			.col-lg-6
 				.main-about__img.relative.width__full
@@ -64,11 +64,11 @@
 			.col-lg-6
 				.main-about__tags
 					each about in abouts
-						+mainAboutTag(about.img, about.imgClass, about.title, about.desc)
+						+mainAboutTag(about.img, about.img2, about.imgClass, about.title, about.desc)
 .main-stock.bg(style="background-image:url('img/stock/bg.png')")
 	.container
 		h2.section__title.section__title_olive.relative Ассортимент агротехники
-		.section__subtitle.main-stock__subtitle От красного до белого, от простого до махрового, от низкого до высокого, от новенького до традиционного, <span>каждому свое.</span>
+		.section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.
 		.row.main-stock__row
 			each stock in stocks
 				.col-lg-3.card__col

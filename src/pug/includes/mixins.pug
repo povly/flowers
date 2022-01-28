@@ -13,11 +13,13 @@ mixin svgFavorite(names)
 	<svg class="#{classes}" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 	</svg>
-mixin mainAboutTag(img, imgClass, title, desc)
-	.main-about__tag
+mixin mainAboutTag(img, img2, imgClass, title, desc)
+	.main-about__tag(class=imgClass)
 		.main-about__tag-inner.flex
 			.main-about__tag-left.width__full
-				.main-about__tag-img.bg.width__full(style="background-image: url('"+ img + "')" class=imgClass)
+				.main-about__tag-img.relative
+					.main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('"+ img + "')")
+					.main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('"+ img2 + "')")
 			.main-about__tag-right.width__full
 				.main-about__tag-title=title
 				.main-about__tag-desc=desc

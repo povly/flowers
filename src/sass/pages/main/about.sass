@@ -1,6 +1,8 @@
 .main
 	&-about
 		padding-top: 45px
+		&__subtitle
+			margin-bottom: 40px
 		&__img
 			min-height: 445px
 			&-item
@@ -56,6 +58,40 @@
 								color: var(--color-white)
 							&-desc
 								color: rgba(255, 255, 255, 0.4)
+			&_icon
+				.main
+					&-about
+						&__tag
+							&-img
+								&-item
+									&:nth-child(2)
+										opacity: 0
+				&:hover
+					.main
+						&-about
+							&__tag
+								&-img
+									&-item
+										&:nth-child(2)
+											opacity: 1
+			&_default
+				.main
+					&-about
+						&__tag
+							&-img
+								border: 1px solid #556444
+								&-item
+									background-size: cover
+								&::after
+									content: ''
+									position: absolute
+									top: 50%
+									left: 50%
+									transform: translate(-50%, -50%)
+									width: 68px
+									height: 68px
+									border: 1.5px solid #9EB087
+									border-radius: 100%
 			&-inner
 				border-radius: 4px
 				border: 1px solid transparent
@@ -67,11 +103,13 @@
 				max-width: calc(100% - 60px - 20px)
 			&-img
 				height: 60px
-				background-size: contain
-				background-position: center
-				&_radius
-					border-radius: 100%
-					background-size: cover
+				border-radius: 100%
+				&-item
+					background-size: contain
+					background-position: center
+					position: absolute
+					height: 100%
+					transition: var(--transition-default)
 			&-title
 				font-weight: bold
 				font-size: 20px
