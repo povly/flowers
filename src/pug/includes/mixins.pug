@@ -42,8 +42,8 @@ mixin btnRegister(classes)
         <path d="M12.1112 11.1111C14.0749 11.1111 15.6668 9.51923 15.6668 7.55556C15.6668 5.59188 14.0749 4 12.1112 4C10.1475 4 8.55566 5.59188 8.55566 7.55556C8.55566 9.51923 10.1475 11.1111 12.1112 11.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         .btn__title Регистрация
-mixin headerListItem(text)
+mixin headerListItem(link,text)
     li.header__list-item
-        a(href="").header__list-link.relative.hover__line=text
+        a(href=link).header__list-link.relative.hover__line=text
 
 
