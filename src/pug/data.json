@@ -128,5 +128,31 @@
 			"img2":"",
 			"title":"Abalone Pink"
 		}
-	]
+	],
+    "watches": [
+      {
+        "cardClass": "",
+        "img":"img/cart/6.jpg",
+        "img2":"",
+        "title":"Callisto"
+      },
+      {
+        "cardClass": "card__img-hover",
+        "img":"img/cart/5.jpg",
+        "img2":"img/cart/4.jpg",
+        "title":"Alexander Woollcott"
+      },
+      {
+        "cardClass": "card__img-hover",
+        "img":"img/stock/1.png",
+        "img2":"img/stock/2.png",
+        "title":"Alexander Woollcott"
+      },
+      {
+        "cardClass": "",
+        "img":"img/stock/3.png",
+        "img2":"",
+        "title":"Abalone Pink"
+      }
+    ]
 }
