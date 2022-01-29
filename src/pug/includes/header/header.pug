@@ -1,0 +1,15 @@
+header.header.absolute.width__full
+    .container
+        .header__block.flex
+            img(src="img/logo.png").logo.header__logo
+            ul.header__list.flex
+                +headerListItem('Главная')
+                +headerListItem('Коллекция пионов')
+                +headerListItem('Агротехника')
+                +headerListItem('Контакты')
+            .header__btns.flex
+                a(href="#!").btn.btn__sm.header__btn.flex
+                    +btnSmSearch
+                a(href="#!").btn.btn__sm.header__btn.flex
+                    +btnSmFavorite
+                +btnRegister('header__btn')

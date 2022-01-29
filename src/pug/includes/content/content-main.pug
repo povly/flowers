@@ -1,82 +1,81 @@
 section.main-collection
-	.container
-		h2.section__title.section__title_olive.relative Наша коллекция
-		.section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контролем.
-		.main-collection__row.row
-			each card in cards
-				.col-lg-3.card__col
-					+cardItem(card.cardClass, card.img, card.img2, card.title)
-		.btn.main-collection__btn.flex
-			.btn__title Подробнее
-			<svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-				<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-			</svg>
+    .container
+        h2.section__title.section__title_olive.relative Наша коллекция
+        .section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контролем.
+        .main-collection__row.row
+            each card in cards
+                .col-lg-3.card__col
+                    +cardItem(card.cardClass, card.img, card.img2, card.title)
+        .btn.main-collection__btn.flex
+            .btn__title Подробнее
+            <svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
 section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
-	.container
-		h2.main-inst__title.section__title.flex
-			span.main-inst__title-span.relative Мы в
-			img(src="img/inst/inst.png", alt="").main-inst__title-img
-		.main-inst__block.flex
-			.main-inst__left.width__full
-				.main-inst__avatar
-					.main-inst__avatar-img.width__full.bg(style="background-image:url('img/inst/avatar.png')")
-				a(href="#!").main-inst__name.main-inst__name_line Pioni.pro
-				.main-inst__name 43 публикации
-				.main-inst__name 500 подписчиков
-				.main-inst__btn.btn.flex
-					.btn__title В профиль
-			.main-inst__right.width__full
-				.main-inst__card.flex
-					.main-inst__card-item.width__full
-						.main-inst__card-top.flex
-							.main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
-							.main-inst__card-title Pioni.pro
-							.main-inst__card-right.flex
-								span
-								span
-								span
-						.main-inst__card-img.bg(style="background-image:url('img/inst/1.jpg')")
-						.main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
-					.main-inst__card-item.width__full
-						.main-inst__card-top.flex
-							.main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
-							.main-inst__card-title Pioni.pro
-							.main-inst__card-right.flex
-								span
-								span
-								span
-						.main-inst__card-img.bg(style="background-image:url('img/inst/2.jpg')")
-						.main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
+    .container
+        h2.main-inst__title.section__title.flex
+            span.main-inst__title-span.relative Мы в
+            img(src="img/inst/inst.png", alt="").main-inst__title-img
+        .main-inst__block.flex
+            .main-inst__left.width__full
+                .main-inst__avatar
+                    .main-inst__avatar-img.width__full.bg(style="background-image:url('img/inst/avatar.png')")
+                a(href="#!").main-inst__name.main-inst__name_line Pioni.pro
+                .main-inst__name 43 публикации
+                .main-inst__name 500 подписчиков
+                .main-inst__btn.btn.flex
+                    .btn__title В профиль
+            .main-inst__right.width__full
+                .main-inst__card.flex
+                    .main-inst__card-item.width__full
+                        .main-inst__card-top.flex
+                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
+                            .main-inst__card-title Pioni.pro
+                            .main-inst__card-right.flex
+                                span
+                                span
+                                span
+                        .main-inst__card-img.bg(style="background-image:url('img/inst/1.jpg')")
+                        .main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
+                    .main-inst__card-item.width__full
+                        .main-inst__card-top.flex
+                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
+                            .main-inst__card-title Pioni.pro
+                            .main-inst__card-right.flex
+                                span
+                                span
+                                span
+                        .main-inst__card-img.bg(style="background-image:url('img/inst/2.jpg')")
+                        .main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
 section.main-about
-	.container
-		h2.section__title.section__title_olive.relative О нас
-		.section__subtitle.main-about__subtitle <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
-		.row.main-about__row
-			.col-lg-6
-				.main-about__img.relative.width__full
-					img(src="img/about/left.png", alt="").main-about__icon.main-about__icon-left.absolute
-					img(src="img/about/right.png", alt="").main-about__icon.main-about__icon-right.absolute
-					.main-about__img-tag.main-about__img-tag-1.absolute Дюбина Валентина
-					.main-about__img-tag.main-about__img-tag-2.absolute Дюбина Валентина
-					.main-about__img-item.main-about__img-left.bg.width__full.absolute(style="background-image:url('img/about/1.jpg')")
-					.main-about__img-item.main-about__img-right.bg.width__full.absolute(style="background-image:url('img/about/2.jpg')")
-			.col-lg-6
-				.main-about__tags
-					each about in abouts
-						+mainAboutTag(about.img, about.img2, about.imgClass, about.title, about.desc)
+    .container
+        h2.section__title.section__title_olive.relative О нас
+        .section__subtitle.main-about__subtitle <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
+        .row.main-about__row
+            .col-lg-6
+                .main-about__img.relative.width__full
+                    img(src="img/about/left.png", alt="").main-about__icon.main-about__icon-left.absolute
+                    img(src="img/about/right.png", alt="").main-about__icon.main-about__icon-right.absolute
+                    .main-about__img-tag.main-about__img-tag-1.absolute Дюбина Валентина
+                    .main-about__img-tag.main-about__img-tag-2.absolute Дюбина Валентина
+                    .main-about__img-item.main-about__img-left.bg.width__full.absolute(style="background-image:url('img/about/1.jpg')")
+                    .main-about__img-item.main-about__img-right.bg.width__full.absolute(style="background-image:url('img/about/2.jpg')")
+            .col-lg-6
+                .main-about__tags
+                    each about in abouts
+                        +mainAboutTag(about.img, about.img2, about.imgClass, about.title, about.desc)
 section.main-stock.bg(style="background-image:url('img/stock/bg.png')")
-	.container
-		h2.section__title.section__title_olive.relative Ассортимент агротехники
-		.section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.
-		.row.main-stock__row
-			each stock in stocks
-				.col-lg-3.card__col
-					+cardItem(stock.cardClass, stock.img, stock.img2, stock.title)
-		.btn.main-stock__btn.flex
-			.btn__title Подробнее
-			<svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-				<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-			</svg>
-
+    .container
+        h2.section__title.section__title_olive.relative Ассортимент агротехники
+        .section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.
+        .row.main-stock__row
+            each stock in stocks
+                .col-lg-3.card__col
+                    +cardItem(stock.cardClass, stock.img, stock.img2, stock.title)
+        .btn.main-stock__btn.flex
+            .btn__title Подробнее
+            <svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>

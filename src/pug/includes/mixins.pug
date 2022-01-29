@@ -1,44 +1,49 @@
 mixin cardItem(cardClass, img, img2, title)
-	.card.relative
-		.card__inner
-			.card__img.relative(class=cardClass)
-				a(href="#!") 
-					.card__img-item.card__img-1.absolute(style="background-image: url('"+ img + "')")
-					.card__img-item.card__img-2.absolute(style="background-image: url('"+ img2 + "')")
-			.card__text.flex.relative
-				a(href="#!").card__title= title
-				+svgFavorite('card__favorite absolute')
+    .card.relative
+        .card__inner
+            .card__img.relative(class=cardClass)
+                a(href="#!")
+                    .card__img-item.card__img-1.absolute(style="background-image: url('" + img + "')")
+                    .card__img-item.card__img-2.absolute(style="background-image: url('" + img2 + "')")
+            .card__text.flex.relative
+                a(href="#!").card__title= title
+                +svgFavorite('card__favorite absolute')
 mixin svgFavorite(names)
-	- const classes = 'favorite ' + names;
-	<svg class="#{classes}" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-	</svg>
+    - const classes = 'favorite ' + names;
+    <svg class="#{classes}" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
 mixin mainAboutTag(img, img2, imgClass, title, desc)
-	.main-about__tag(class=imgClass)
-		.main-about__tag-inner.flex
-			.main-about__tag-left.width__full
-				.main-about__tag-img.relative
-					.main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('"+ img + "')")
-					.main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('"+ img2 + "')")
-			.main-about__tag-right.width__full
-				.main-about__tag-title=title
-				.main-about__tag-desc=desc
+    .main-about__tag(class=imgClass)
+        .main-about__tag-inner.flex
+            .main-about__tag-left.width__full
+                .main-about__tag-img.relative
+                    .main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('" + img + "')")
+                    .main-about__tag-img-item.bg.width__full.absolute(style="background-image: url('" + img2 + "')")
+            .main-about__tag-right.width__full
+                .main-about__tag-title=title
+                .main-about__tag-desc=desc
 mixin footerListItem(text)
-	li.footer-sec__list-item
-		a(href="#!").footer-sec__list-link=text 
+    li.footer-sec__list-item
+        a(href="#!").footer-sec__list-link=text
 mixin btnSmSearch
-	<svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-	<path d="M20 20L16.1333 16.1333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-	</svg>
+    <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 20L16.1333 16.1333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
 mixin btnSmFavorite
-	<svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M20.1751 5.43501C19.7203 4.98007 19.1804 4.61918 18.5862 4.37296C17.992 4.12673 17.355 4 16.7118 4C16.0686 4 15.4316 4.12673 14.8374 4.37296C14.2432 4.61918 13.7033 4.98007 13.2485 5.43501L12.3048 6.37873L11.3611 5.43501C10.4426 4.51649 9.19679 4.00048 7.89781 4.00048C6.59883 4.00048 5.35305 4.51649 4.43454 5.43501C3.51602 6.35353 3 7.5993 3 8.89828C3 10.1973 3.51602 11.443 4.43454 12.3616L5.37825 13.3053L12.3048 20.2318L19.2314 13.3053L20.1751 12.3616C20.63 11.9068 20.9909 11.3669 21.2371 10.7727C21.4833 10.1784 21.6101 9.54152 21.6101 8.89828C21.6101 8.25505 21.4833 7.61812 21.2371 7.02388C20.9909 6.42964 20.63 5.88974 20.1751 5.43501V5.43501Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-	</svg>
-mixin btnRegister
-	.btn.flex.footer-sec__btn.btn__register.width__full
-		<svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M19.2222 20.0001V18.2223C19.2222 17.2793 18.8476 16.3749 18.1808 15.7081C17.514 15.0414 16.6097 14.6667 15.6667 14.6667H8.55556C7.61256 14.6667 6.70819 15.0414 6.0414 15.7081C5.3746 16.3749 5 17.2793 5 18.2223V20.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		<path d="M12.1112 11.1111C14.0749 11.1111 15.6668 9.51923 15.6668 7.55556C15.6668 5.59188 14.0749 4 12.1112 4C10.1475 4 8.55566 5.59188 8.55566 7.55556C8.55566 9.51923 10.1475 11.1111 12.1112 11.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
-		.btn__title Регистрация
+    <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.1751 5.43501C19.7203 4.98007 19.1804 4.61918 18.5862 4.37296C17.992 4.12673 17.355 4 16.7118 4C16.0686 4 15.4316 4.12673 14.8374 4.37296C14.2432 4.61918 13.7033 4.98007 13.2485 5.43501L12.3048 6.37873L11.3611 5.43501C10.4426 4.51649 9.19679 4.00048 7.89781 4.00048C6.59883 4.00048 5.35305 4.51649 4.43454 5.43501C3.51602 6.35353 3 7.5993 3 8.89828C3 10.1973 3.51602 11.443 4.43454 12.3616L5.37825 13.3053L12.3048 20.2318L19.2314 13.3053L20.1751 12.3616C20.63 11.9068 20.9909 11.3669 21.2371 10.7727C21.4833 10.1784 21.6101 9.54152 21.6101 8.89828C21.6101 8.25505 21.4833 7.61812 21.2371 7.02388C20.9909 6.42964 20.63 5.88974 20.1751 5.43501V5.43501Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+mixin btnRegister(classes)
+    .btn.flex.btn__register.width__full(class=classes)
+        <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.2222 20.0001V18.2223C19.2222 17.2793 18.8476 16.3749 18.1808 15.7081C17.514 15.0414 16.6097 14.6667 15.6667 14.6667H8.55556C7.61256 14.6667 6.70819 15.0414 6.0414 15.7081C5.3746 16.3749 5 17.2793 5 18.2223V20.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.1112 11.1111C14.0749 11.1111 15.6668 9.51923 15.6668 7.55556C15.6668 5.59188 14.0749 4 12.1112 4C10.1475 4 8.55566 5.59188 8.55566 7.55556C8.55566 9.51923 10.1475 11.1111 12.1112 11.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        .btn__title Регистрация
+mixin headerListItem(text)
+    li.header__list-item
+        a(href="").header__list-link.relative.hover__line=text
+
+
