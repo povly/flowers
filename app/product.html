@@ -9,7 +9,7 @@
   <body class="relative">
     <header class="header absolute width__full">
       <div class="container">
-        <div class="header__block flex"><a class="flex" href="/"><img class="logo header__logo" src="img/logo.png"></a>
+        <div class="header__block flex"><a class="flex header__logo logo" href="/"><img src="img/logo.png"></a>
           <ul class="header__list flex">
             <li class="header__list-item"><a class="header__list-link relative hover__line" href="/#!">Главная</a></li>
             <li class="header__list-item"><a class="header__list-link relative hover__line" href="/product.html">Коллекция пионов</a></li>
@@ -22,7 +22,7 @@
 </svg></a><a class="btn btn__sm header__btn flex" href="#!"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.1751 5.43501C19.7203 4.98007 19.1804 4.61918 18.5862 4.37296C17.992 4.12673 17.355 4 16.7118 4C16.0686 4 15.4316 4.12673 14.8374 4.37296C14.2432 4.61918 13.7033 4.98007 13.2485 5.43501L12.3048 6.37873L11.3611 5.43501C10.4426 4.51649 9.19679 4.00048 7.89781 4.00048C6.59883 4.00048 5.35305 4.51649 4.43454 5.43501C3.51602 6.35353 3 7.5993 3 8.89828C3 10.1973 3.51602 11.443 4.43454 12.3616L5.37825 13.3053L12.3048 20.2318L19.2314 13.3053L20.1751 12.3616C20.63 11.9068 20.9909 11.3669 21.2371 10.7727C21.4833 10.1784 21.6101 9.54152 21.6101 8.89828C21.6101 8.25505 21.4833 7.61812 21.2371 7.02388C20.9909 6.42964 20.63 5.88974 20.1751 5.43501V5.43501Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a>
-            <div class="btn flex btn__register width__full header__btn"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="btn flex btn__register width__full modal__show header__btn" data-modal="auth"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.2222 20.0001V18.2223C19.2222 17.2793 18.8476 16.3749 18.1808 15.7081C17.514 15.0414 16.6097 14.6667 15.6667 14.6667H8.55556C7.61256 14.6667 6.70819 15.0414 6.0414 15.7081C5.3746 16.3749 5 17.2793 5 18.2223V20.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.1112 11.1111C14.0749 11.1111 15.6668 9.51923 15.6668 7.55556C15.6668 5.59188 14.0749 4 12.1112 4C10.1475 4 8.55566 5.59188 8.55566 7.55556C8.55566 9.51923 10.1475 11.1111 12.1112 11.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -222,7 +222,7 @@
       <div class="footer-sec">
         <div class="container">
           <div class="footer-sec__block flex">
-            <div class="footer-sec__left flex"><img class="logo footer-sec__logo" src="img/logo.png" alt="">
+            <div class="footer-sec__left flex"><a class="flex logo footer-sec__logo" href="/"><img src="img/logo.png" alt=""></a>
               <ul class="footer-sec__list flex">
                 <li class="footer-sec__list-item"><a class="footer-sec__list-link" href="#!">Главная</a></li>
                 <li class="footer-sec__list-item"><a class="footer-sec__list-link" href="#!">Коллекция пионов</a></li>
@@ -237,7 +237,7 @@
 </svg></a><a class="btn btn__sm footer-sec__btn flex" href="#!"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.1751 5.43501C19.7203 4.98007 19.1804 4.61918 18.5862 4.37296C17.992 4.12673 17.355 4 16.7118 4C16.0686 4 15.4316 4.12673 14.8374 4.37296C14.2432 4.61918 13.7033 4.98007 13.2485 5.43501L12.3048 6.37873L11.3611 5.43501C10.4426 4.51649 9.19679 4.00048 7.89781 4.00048C6.59883 4.00048 5.35305 4.51649 4.43454 5.43501C3.51602 6.35353 3 7.5993 3 8.89828C3 10.1973 3.51602 11.443 4.43454 12.3616L5.37825 13.3053L12.3048 20.2318L19.2314 13.3053L20.1751 12.3616C20.63 11.9068 20.9909 11.3669 21.2371 10.7727C21.4833 10.1784 21.6101 9.54152 21.6101 8.89828C21.6101 8.25505 21.4833 7.61812 21.2371 7.02388C20.9909 6.42964 20.63 5.88974 20.1751 5.43501V5.43501Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a>
-                <div class="btn flex btn__register width__full footer-sec__btn"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="btn flex btn__register width__full modal__show footer-sec__btn" data-modal="auth"><svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.2222 20.0001V18.2223C19.2222 17.2793 18.8476 16.3749 18.1808 15.7081C17.514 15.0414 16.6097 14.6667 15.6667 14.6667H8.55556C7.61256 14.6667 6.70819 15.0414 6.0414 15.7081C5.3746 16.3749 5 17.2793 5 18.2223V20.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.1112 11.1111C14.0749 11.1111 15.6668 9.51923 15.6668 7.55556C15.6668 5.59188 14.0749 4 12.1112 4C10.1475 4 8.55566 5.59188 8.55566 7.55556C8.55566 9.51923 10.1475 11.1111 12.1112 11.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -249,13 +249,56 @@
         </div>
       </div>
     </footer>
-    <!--.modal-->
-    <!--    .modal__container-->
-    <!--        .modal__title Авторизация на сайте-->
-    <!--        form.modal__form-->
-    <!--            .modal__form-group-->
-    <!--                .modal__form-subtitle Имя пользователя или email-->
-    <!--                input(type="text").product__input.modal__form-input-->
+    <div class="modal modal__auth modal__form fixed width__full">
+      <div class="container">
+        <form class="modal__form-item width__full">
+          <div class="modal__form-title">Авторизация на сайте</div>
+          <div class="modal__form-group">
+            <div class="modal__form-subtitle">Имя пользователя или email</div>
+            <input class="width__full product__input modal__form-input" type="text" name="auth-login">
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-subtitle">Пароль</div>
+            <input class="width__full product__input modal__form-input" type="text" name="auth-pass">
+          </div>
+          <div class="modal__form-group">
+            <div class="btn flex modal__form-btn width__full">
+              <div class="btn__title">Войти</div>
+            </div>
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-link modal__show" data-modal="register">Быстрая регистрация</div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal__register modal__form fixed width__full">
+      <div class="container">
+        <form class="modal__form-item width__full">
+          <div class="modal__form-title">Быстрая регистрация</div>
+          <div class="modal__form-group">
+            <div class="modal__form-subtitle">E-mail</div>
+            <input class="width__full product__input modal__form-input" type="text" name="reg-email">
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-subtitle">Пароль</div>
+            <input class="width__full product__input modal__form-input" type="text" name="reg-pass">
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-subtitle">Подтвердите пароль</div>
+            <input class="width__full product__input modal__form-input" type="text" name="reg-pass-rep">
+          </div>
+          <div class="modal__form-group">
+            <div class="btn flex modal__form-btn width__full">
+              <div class="btn__title">Зарегистрироваться</div>
+            </div>
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-link modal__show" data-modal="auth">Авторизация на сайте</div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="js/script.min.js"> </script>
   </body>
 </html>

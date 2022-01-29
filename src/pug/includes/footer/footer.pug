@@ -30,7 +30,8 @@ footer.footer
         .container
             .footer-sec__block.flex
                 .footer-sec__left.flex
-                    img(src="img/logo.png", alt="").logo.footer-sec__logo
+                    a(href="/").flex.logo.footer-sec__logo
+                        img(src="img/logo.png", alt="")
                     ul.footer-sec__list.flex
                         +footerListItem('Главная')
                         +footerListItem('Коллекция пионов')
@@ -43,10 +44,36 @@ footer.footer
                         a(href="#!").btn.btn__sm.footer-sec__btn.flex
                             +btnSmFavorite
                         +btnRegister('footer-sec__btn')
-//.modal
-//    .modal__container
-//        .modal__title Авторизация на сайте
-//        form.modal__form
-//            .modal__form-group
-//                .modal__form-subtitle Имя пользователя или email
-//                input(type="text").product__input.modal__form-input
+.modal.modal__auth.modal__form.fixed.width__full
+    .container
+        form.modal__form-item.width__full
+            .modal__form-title Авторизация на сайте
+            .modal__form-group
+                .modal__form-subtitle Имя пользователя или email
+                input(type="text" name="auth-login").width__full.product__input.modal__form-input
+            .modal__form-group
+                .modal__form-subtitle Пароль
+                input(type="text" name="auth-pass").width__full.product__input.modal__form-input
+            .modal__form-group
+                .btn.flex.modal__form-btn.width__full
+                    .btn__title Войти
+            .modal__form-group
+                .modal__form-link.modal__show(data-modal="register") Быстрая регистрация
+.modal.modal__register.modal__form.fixed.width__full
+    .container
+        form.modal__form-item.width__full
+            .modal__form-title Быстрая регистрация
+            .modal__form-group
+                .modal__form-subtitle E-mail
+                input(type="text" name="reg-email").width__full.product__input.modal__form-input
+            .modal__form-group
+                .modal__form-subtitle Пароль
+                input(type="text" name="reg-pass").width__full.product__input.modal__form-input
+            .modal__form-group
+                .modal__form-subtitle Подтвердите пароль
+                input(type="text" name="reg-pass-rep").width__full.product__input.modal__form-input
+            .modal__form-group
+                .btn.flex.modal__form-btn.width__full
+                    .btn__title Зарегистрироваться
+            .modal__form-group
+                .modal__form-link.modal__show(data-modal="auth") Авторизация на сайте
