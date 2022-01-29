@@ -1,0 +1,102 @@
+.product
+  padding-top: 28px
+  &__wrapper
+    background: linear-gradient(213.24deg, rgba(0, 0, 0, 0.2) 1.26%, rgba(0, 0, 0, 0.068) 98.47%)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    padding: 1px
+    &-inner
+      background-color: var(--color-white)
+      border-radius: 4px
+      padding: 35px 25px 35px 35px
+  &__left
+    max-width: 438px
+    margin-right: 20px
+  &__right
+    max-width: calc(100% - 438px - 20px)
+  &__img
+    height: 438px
+    border-radius: 4px
+  &__block
+    margin-bottom: 16px
+  &__favorite
+    bottom: 10px
+    left: 10px
+    &:hover
+      .btn
+        &__svg
+          path
+            fill: var(--color-olive)
+  &__boost
+    right: 10px
+    bottom: 10px
+  &__title
+    font-weight: 600
+    font-size: 24px
+    line-height: 28px
+    margin-bottom: 35px
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 21px
+    margin-bottom: 20px
+  &__table
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: -15px
+    &-group
+      max-width: calc(100% / 2 - 10px)
+      margin-bottom: 15px
+      &_btn
+        margin-bottom: 0
+    &-name
+      font-size: 14px
+      line-height: 16px
+      color: #4E4E4E
+      margin-bottom: 5px
+    &-input
+      padding: 10px 10px 11px
+      background: #F7F7F7
+      border-radius: 4px
+      font-weight: 600
+      line-height: 19px
+    &-btn
+      .btn
+        &__svg
+          margin-right: 5px
+      &:hover
+        .btn
+          &__svg
+            path
+              fill: var(--color-white)
+  &__gallery
+    margin: 0 -7.5px 38px
+    &-item
+      max-width: calc(100% / 6 - 7.5px)
+      height: 134px
+      margin: 0 7.5px
+      &::after
+        content: ''
+        width: calc(100% + 4px)
+        height: calc(100% + 4px)
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border-radius: 3px
+        border: 1px solid var(--color-olive)
+        opacity: 0
+      &:hover
+        &::after
+          opacity: 1
+    &-img
+      height: 100%
+      border-radius: 4px
+  &__desc
+    h2,h3,h4,h5,h6
+      font-weight: 600
+      font-size: 18px
+      line-height: 21px
+      margin-bottom: 20px
+    p
+      line-height: 19px
