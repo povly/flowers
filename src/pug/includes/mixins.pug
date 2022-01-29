@@ -23,9 +23,9 @@ mixin mainAboutTag(img, img2, imgClass, title, desc)
             .main-about__tag-right.width__full
                 .main-about__tag-title=title
                 .main-about__tag-desc=desc
-mixin footerListItem(text)
+mixin footerListItem(link,text)
     li.footer-sec__list-item
-        a(href="#!").footer-sec__list-link=text
+        a(href=link).footer-sec__list-link=text
 mixin btnSmSearch
     <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,3 +60,6 @@ mixin productTableBtn
 mixin productGalleryItem(img)
     .product__gallery-item.width__full.relative
         .product__gallery-img.bg.width__full(style="background-image: url('"+ img +"')")
+mixin modallGalleryImg(classes, img)
+    .modal__gallery-img.bg.width__full(style="background-image: url('"+img+"')" data-url=img, class=classes)
+

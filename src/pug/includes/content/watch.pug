@@ -1,0 +1,8 @@
+.product-watch
+    .container
+        h2.section__title.section__title_olive.product-watch__title.relative Вы смотрели
+        .section__subtitle.product-watch__subtitle Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались большим уважением.
+        .product-watch__row.row
+            each watch in watches
+                .col-lg-3
+                    +cardItem(watch.cardClass, watch.img, watch.img2, watch.title)

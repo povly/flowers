@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
         }
     }
-
     function hiddenBodyOverflow(){
         document.body.style.overflow = 'hidden';
     }
@@ -35,5 +34,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 clearBodyOverflow();
             }
         })
+        const boost = modal.querySelector('.modal__gallery-boost');
+        if (boost){
+            boost.addEventListener('click', ()=>{
+                modal.classList.remove('active');
+                clearBodyOverflow();
+            })
+        }
+        if (modal.classList.contains('modal__gallery')){
+            const main = modal.querySelector('.modal__gallery-main');
+            const images = modal.querySelectorAll('.modal__gallery-img');
+            images.forEach((img)=>{
+                img.addEventListener('click', ()=>{
+                    const url = img.getAttribute('data-url');
+                    const active = modal.querySelector('.modal__gallery-img.active');
+                    active.classList.remove('active');
+                    img.classList.add('active');
+                    main.style.backgroundImage = 'url("'+ url +'")';
+                })
+            })
+        }
     })
 })
