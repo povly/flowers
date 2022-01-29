@@ -1,7 +1,8 @@
 header.header.absolute.width__full
     .container
         .header__block.flex
-            img(src="img/logo.png").logo.header__logo
+            a(href="/").flex
+                img(src="img/logo.png").logo.header__logo
             ul.header__list.flex
                 +headerListItem('/#!','Главная')
                 +headerListItem('/product.html','Коллекция пионов')
