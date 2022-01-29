@@ -15,6 +15,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function clearBodyOverflow(){
         document.body.style.overflow = '';
     }
+    function clickAndChangeGallery(images, activeClass, parentMainImg, mainImg){
+        images.forEach((img)=>{
+            img.addEventListener('click', ()=>{
+                const url = img.getAttribute('data-url');
+                const active = parentMainImg.querySelector(activeClass);
+                active.classList.remove('active');
+                img.classList.add('active');
+                mainImg.style.backgroundImage = 'url("'+ url +'")';
+            })
+        })
+    }
 
     modalShows.forEach((show)=>{
         show.addEventListener('click', ()=>{
@@ -44,15 +55,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if (modal.classList.contains('modal__gallery')){
             const main = modal.querySelector('.modal__gallery-main');
             const images = modal.querySelectorAll('.modal__gallery-img');
-            images.forEach((img)=>{
-                img.addEventListener('click', ()=>{
-                    const url = img.getAttribute('data-url');
-                    const active = modal.querySelector('.modal__gallery-img.active');
-                    active.classList.remove('active');
-                    img.classList.add('active');
-                    main.style.backgroundImage = 'url("'+ url +'")';
-                })
-            })
+            clickAndChangeGallery(images, '.modal__gallery-img.active', modal, main);
         }
     })
+
+    const product = document.querySelector('.product');
+    if (product){
+        const img = product.querySelector('.product__img');
+        const galleries = product.querySelectorAll('.product__gallery-img');
+        clickAndChangeGallery(galleries, '.product__gallery-img.active', product, img);
+    }
 })

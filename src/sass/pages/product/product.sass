@@ -71,10 +71,12 @@
               fill: var(--color-white)
   &__gallery
     margin: 0 -7.5px 38px
-    &-item
+    &-img
       max-width: calc(100% / 6 - 7.5px)
       height: 134px
       margin: 0 7.5px
+      border-radius: 4px
+      cursor: pointer
       &::after
         content: ''
         width: calc(100% + 4px)
@@ -86,12 +88,9 @@
         border-radius: 3px
         border: 1px solid var(--color-olive)
         opacity: 0
-      &:hover
+      &:hover, &.active
         &::after
           opacity: 1
-    &-img
-      height: 100%
-      border-radius: 4px
   &__desc
     h2,h3,h4,h5,h6
       font-weight: 600
