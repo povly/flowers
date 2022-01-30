@@ -41,7 +41,7 @@ footer.footer
                     .footer-sec__btns.flex
                         a(href="#!").btn.btn__sm.footer-sec__btn.flex
                             +btnSmSearch
-                        a(href="#!").btn.btn__sm.btn__favorite.footer-sec__btn.flex
+                        a(href="/favorite.html").btn.btn__sm.btn__favorite.footer-sec__btn.flex
                             +btnSmFavorite
                         +btnRegister('footer-sec__btn')
 .modal.modal__auth.modal__form.fixed.width__full
@@ -94,3 +94,46 @@ footer.footer
             +modallGalleryImg('','img/cart/4.jpg')
             +modallGalleryImg('','img/cart/5.jpg')
             +modallGalleryImg('','img/cart/6.jpg')
+.modal.modal__gallery.modal__gallery_favorite1.fixed.width__full
+    .container
+        .modal__gallery-top.width__full
+            .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/1.jpg')")
+                .modal__gallery-boost.btn.btn__sm.absolute.flex
+                    <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 20L16.1333 16.1333" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.2 11.2H7.79995" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+        .modal__gallery-imgs.flex
+            +modallGalleryImg('active','img/cart/1.jpg')
+            +modallGalleryImg('','img/cart/2.jpg')
+            +modallGalleryImg('','img/cart/3.jpg')
+.modal.modal__gallery.modal__gallery_favorite2.fixed.width__full
+    .container
+        .modal__gallery-top.width__full
+            .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/2.jpg')")
+                .modal__gallery-boost.btn.btn__sm.absolute.flex
+                    <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 20L16.1333 16.1333" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.2 11.2H7.79995" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+        .modal__gallery-imgs.flex
+            +modallGalleryImg('active','img/cart/2.jpg')
+            +modallGalleryImg('','img/cart/5.jpg')
+            +modallGalleryImg('','img/cart/4.jpg')
+            +modallGalleryImg('','img/cart/3.jpg')
+.modal.modal__gallery.modal__gallery_favorite3.fixed.width__full
+    .container
+        .modal__gallery-top.width__full
+            .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/3.jpg')")
+                .modal__gallery-boost.btn.btn__sm.absolute.flex
+                    <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 20L16.1333 16.1333" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.2 11.2H7.79995" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+        .modal__gallery-imgs.flex
+            +modallGalleryImg('active','img/cart/3.jpg')
+            +modallGalleryImg('','img/cart/2.jpg')
+            +modallGalleryImg('','img/cart/1.jpg')

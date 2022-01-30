@@ -49,10 +49,10 @@ mixin productTableGroup(name, text)
     .product__table-group.width__full
         .product__table-name=name
         .product__table-input=text
-mixin productTableBtn
-    .product__table-group.product__table-group_btn.width__full
+mixin productTableBtn(classes)
+    .product__table-group.product__table-group_btn.width__full.flex(class=classes)
         .product__table-name &nbsp;
-        .product__table-btn.btn.flex
+        .product__table-btn.width__full.btn.flex
             <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M20.1751 5.43501C19.7203 4.98007 19.1804 4.61918 18.5862 4.37296C17.992 4.12673 17.355 4 16.7118 4C16.0686 4 15.4316 4.12673 14.8374 4.37296C14.2432 4.61918 13.7033 4.98007 13.2485 5.43501L12.3048 6.37873L11.3611 5.43501C10.4426 4.51649 9.19679 4.00048 7.89781 4.00048C6.59883 4.00048 5.35305 4.51649 4.43454 5.43501C3.51602 6.35353 3 7.5993 3 8.89828C3 10.1973 3.51602 11.443 4.43454 12.3616L5.37825 13.3053L12.3048 20.2318L19.2314 13.3053L20.1751 12.3616C20.63 11.9068 20.9909 11.3669 21.2371 10.7727C21.4833 10.1784 21.6101 9.54152 21.6101 8.89828C21.6101 8.25505 21.4833 7.61812 21.2371 7.02388C20.9909 6.42964 20.63 5.88974 20.1751 5.43501V5.43501Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -61,4 +61,37 @@ mixin productGalleryItem(classes,img)
     .product__gallery-img.bg.width__full.relative(style="background-image: url('"+ img +"')", data-url=img, class=classes)
 mixin modallGalleryImg(classes, img)
     .modal__gallery-img.bg.width__full(style="background-image: url('"+img+"')" data-url=img, class=classes)
-
+mixin electBtnDelete(classes, classDelete, text)
+    .product__table-group.product__table-group_btn.width__full.flex(class=classes)
+        .product__table-name &nbsp;
+        .product__table-btn.width__full.btn.flex(class=classDelete)
+            <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 5H17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.6665 4.99996V3.33329C6.6665 2.89127 6.8421 2.46734 7.15466 2.15478C7.46722 1.84222 7.89114 1.66663 8.33317 1.66663H11.6665C12.1085 1.66663 12.5325 1.84222 12.845 2.15478C13.1576 2.46734 13.3332 2.89127 13.3332 3.33329V4.99996M15.8332 4.99996V16.6666C15.8332 17.1087 15.6576 17.5326 15.345 17.8451C15.0325 18.1577 14.6085 18.3333 14.1665 18.3333H5.83317C5.39114 18.3333 4.96722 18.1577 4.65466 17.8451C4.3421 17.5326 4.1665 17.1087 4.1665 16.6666V4.99996H15.8332Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            .btn__title=text
+mixin electItem(img, num, classDelete, text)
+    .elect__item
+        .elect__block.flex
+            .elect__block-left.width__full
+                .elect__img.bg.relative(style="background-image: url('"+img+"')")
+                    .btn.btn__sm.elect__boost.flex.absolute.modal__show(data-modal="gallery_favorite" + num)
+                        <svg class="btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 20L16.1333 16.1333" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 8V14" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14.2 11.2H7.79995" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+            .elect__block-right.width__full
+                .elect__right-block.width__full.flex
+                    .elect__right-l.width__full
+                        h2.product__title.elect__right-title Abalone Pink
+                        .product__subtitle Характеристики:
+                        .product__table.flex
+                            +productTableGroup('Бренд', 'Вихрь')
+                            +productTableGroup('Диаметр цветка', '8 см')
+                            +productTableGroup('Высота куста', '66 см')
+                            +productTableGroup('Сезон цветения', 'Весна')
+                    .elect__right-r.width__full
+                        +electBtnDelete('elect__right-r-group_btn', classDelete, text)
+                a(href="/product.html").elect__link Подробнее

@@ -1,0 +1,127 @@
+.elect
+  margin-top: -88px
+  &__overlay
+    z-index: 2
+    top: 60px
+    left: 50%
+    transform: translateX(-50%)
+    background: var(--color-olive)
+    border-radius: 4px
+    padding: 2px
+    max-width: 691px
+    &-inner
+      border: 1px solid #A5AD9C
+      border-radius: 4px
+      padding: 21px 30px 23px
+    &-title, &-subtitle
+      text-align: center
+      font-weight: 600
+    &-title
+      font-size: 24px
+      line-height: 28px
+      color: var(--color-white)
+      margin-bottom: 5px
+    &-subtitle
+      font-size: 18px
+      line-height: 21px
+      color: #A5AD9C
+  &__title
+    &::after
+      display: none
+  &__top
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 24px
+    &-title
+      font-size: 24px
+      line-height: 28px
+      color: var(--color-white)
+      text-shadow: 0px 0px 10px var(--color-black), 0px 0px 10px var(--color-black)
+      &::after
+        content: ''
+        width: 19px
+        background-color: var(--color-olive)
+        height: 3px
+        position: absolute
+        bottom: -2px
+        left: -2px
+        border-radius: 100px
+    &-btn
+      max-width: 169px
+      .btn
+        &__svg
+          margin-right: 8px
+  &__item
+    background: linear-gradient(213.24deg, rgba(0, 0, 0, 0.2) 1.26%, rgba(0, 0, 0, 0.068) 98.47%)
+    padding: 1px
+    border-radius: 4px
+    &:not(:last-child)
+      margin-bottom: 20px
+    &:hover
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3)
+  &__block
+    border-radius: 4px
+    background-color: var(--color-white)
+    padding: 20px
+    &-left
+      max-width:  270px
+      margin-right: 30px
+    &-right
+      max-width: calc(100% - 270px - 30px)
+  &__img
+    height: 257px
+  &__boost
+    left: 5px
+    bottom: 5px
+  &__right
+    &-block
+      align-items: flex-end
+    &-title
+      margin-bottom: 20px
+      min-height: 27px
+      display: table
+    &-subtitle
+      min-height: 21px
+    &-l
+      max-width: 422px
+      margin-right: 27px
+    &-r
+      max-width: calc(100% - 422px - 27px)
+      &-group
+        &_btn
+          max-width: 100%
+  &__link
+    font-size: 14px
+    line-height: 16px
+    text-decoration: underline
+    margin-top: 15px
+    display: table
+    min-height: 16px
+  &__none
+    .elect
+      &__top
+        &-btn
+          opacity: 0.5
+      &__item
+        pointer-events: none
+      &__img, &__right-title, &__right-subtitle, &__link
+        background-color: var(--color-gray)
+      &__right
+        &-title
+          width: 166px
+        &-subtitle
+          width: 142px
+      &__link
+        width: 76px
+    .product
+      &__table
+        &-name
+          width: 50px
+        &-btn, &-name
+          background-color: var(--color-gray)
+        &-group
+          &_btn
+            .product
+              &__table
+                &-name
+                  display: none
