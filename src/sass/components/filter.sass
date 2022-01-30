@@ -1,0 +1,99 @@
+.filter
+  margin-bottom: 20px
+  &__title
+    font-size: 14px
+    line-height: 16px
+    color: #4E4E4E
+    margin-bottom: 5px
+  &__item
+    background: #F7F7F7
+    border-radius: 4px
+    min-height: 40px
+    padding: 10px 17px 11px
+  &__search
+    padding: 7px 8px
+    align-items: center
+    &-icon
+      padding-right: 8px
+      border-right: 2px solid var(--color-olive)
+    &-input
+      font-size: 16px
+      line-height: 19px
+      color: var(--color-black)
+      margin-left: 10px
+      outline: none
+      border: none
+      background-color: transparent
+  &__select
+    align-items: center
+    cursor: pointer
+    padding-right: 35px
+    &-item
+      font-weight: 600
+      font-size: 16px
+      line-height: 19px
+      overflow: hidden
+      white-space: nowrap
+    &-arrow, &-list
+      transition: var(--transition-default)
+    &-arrow
+      top: 50%
+      transform: translateY(-50%)
+      right: 17px
+    &-list
+      left: 0
+      top: calc(100% + 5px)
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3)
+      border-radius: 4px
+      z-index: 2
+      flex-direction: column
+      padding: 15px 10px
+      background-color: var(--color-white)
+      transition: (--transition-default)
+      opacity: 0
+      visibility: hidden
+    &-subitem
+      cursor: pointer
+      &:not(:last-child)
+        margin-bottom: 10px
+    &.active
+      .filter
+        &__select
+          &-arrow
+            transform: rotate(180deg) translateY(50%)
+          &-list
+            opacity: 1
+            visibility: visible
+    &-subname
+      margin-right: 5px
+    &-subtitle
+      font-size: 14px
+      line-height: 16px
+      margin-top: 3px
+  &__checkbox
+    input
+      display: none
+      &:checked
+        &::after
+          background-color: var(--color-olive)
+    &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 20px
+      background: var(--color-gray)
+      border: 1px solid #DEDEDE
+      box-sizing: border-box
+      border-radius: 4px
+    svg, img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &.checked
+      &::after
+        background-color: var(--color-olive)
+  &__submit
+    .btn
+      &__title
+        margin-left: 8px

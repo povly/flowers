@@ -1,0 +1,33 @@
+.archive
+  &__title
+    &::after
+      display: none
+  &__pagination
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    .page
+      &-numbers
+        font-size: 14px
+        line-height: 16px
+        &:not(:last-child)
+          margin-right: 13px
+        &.current, &.number:hover
+          position: relative
+          color: var(--color-olive)
+          &::after
+            content: ''
+            width: 19px
+            background-color: var(--color-olive)
+            height: 3px
+            position: absolute
+            bottom: -2px
+            left: -5px
+            border-radius: 100px
+        &.next, &.prev
+          border-radius: 2px
+          background-color: var(--color-olive)
+          padding: 6px 7px
+  &__filter
+    &-row
+      margin-top: 20px

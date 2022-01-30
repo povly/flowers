@@ -1,0 +1,218 @@
+.overlay.bg(style="background-image: url('img/overlay/bg.png')")
+    .container
+        .breadcrumb.rank-math-breadcrumb
+            a(href="/") Главная
+            | &nbsp;|&nbsp;
+            span Коллекция пионов
+        h1.section__title.section__title_white.relative.overlay__title.archive__title &nbsp;
+.archive
+    .container
+        form().archive__form.archive__filter-row.row
+            .col-lg-6
+                .filter.width__full
+                    .filter__title Поиск
+                    .filter__item.filter__search.flex
+                        .filter__search-icon.flex
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 20L16.1333 16.1333" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        input(type="text" placeholder="Название цветка").width__full.filter__search-input
+            .col-lg-3
+                .filter.width__full
+                    .filter__title Диаметр цветка
+                    .filter__item.filter__select.flex.relative
+                        .filter__select-item
+                        <svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .filter__select-list.absolute.flex.width__full
+                            label(for="filter_hh1").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.checked
+                                    input(type="checkbox" id="filter_hh1" name="filter_hh[]" checked value="15 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 15 см
+                            label(for="filter_hh2").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_hh2" name="filter_hh[]" value="16 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 16 см
+                            label(for="filter_hh3").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_hh3" name="filter_hh[]" value="17 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 17 см
+            .col-lg-3
+                .filter.width__full
+                    .filter__title Высота куста
+                    .filter__item.filter__select.flex.relative
+                        .filter__select-item
+                        <svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .filter__select-list.absolute.flex.width__full
+                            label(for="filter_h1").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.checked
+                                    input(type="checkbox" id="filter_h1" name="filter_h[]" checked value="15 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 15 см
+                            label(for="filter_h2").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_h2" name="filter_h[]" value="16 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 16 см
+                            label(for="filter_h3").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_h3" name="filter_h[]" value="17 см")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle 17 см
+            .col-lg-3
+                .filter.width__full
+                    .filter__title Группа
+                    .filter__item.filter__select.flex.relative
+                        .filter__select-item
+                        <svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .filter__select-list.absolute.flex.width__full
+                            label(for="filter_g1").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.checked
+                                    input(type="checkbox" id="filter_g1" name="filter_g[]" checked value="Древовидные")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Древовидные
+                            label(for="filter_g2").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_g2" name="filter_g[]" value="Древовидные 2")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Древовидные 2
+                            label(for="filter_g3").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_g3" name="filter_g[]" value="Древовидные 3")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Древовидные 3
+            .col-lg-3
+                .filter.width__full
+                    .filter__title Сезон цветения
+                    .filter__item.filter__select.flex.relative
+                        .filter__select-item
+                        <svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .filter__select-list.absolute.flex.width__full
+                            label(for="filter_s1").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.checked
+                                    input(type="checkbox" id="filter_s1" name="filter_s[]" checked value="Весна")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Весна
+                            label(for="filter_s2").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_s2" name="filter_s[]" value="Лето")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Лето
+                            label(for="filter_s3").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_s3" name="filter_s[]" value="Осень")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Осень
+                            label(for="filter_s4").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_s4" name="filter_s[]" value="Зима")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Зима
+            .col-lg-3
+                .filter.width__full
+                    .filter__title Форма цветка
+                    .filter__item.filter__select.flex.relative
+                        .filter__select-item
+                        <svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .filter__select-list.absolute.flex.width__full
+                            label(for="filter_f1").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.checked
+                                    input(type="checkbox" id="filter_f1" name="filter_f[]" checked value="Полумахровая 1")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Полумахровая 1
+                            label(for="filter_f2").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_f2" name="filter_f[]" value="Полумахровая 2")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Полумахровая 2
+                            label(for="filter_f3").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative
+                                    input(type="checkbox" id="filter_f3" name="filter_f[]" value="Полумахровая 3")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Полумахровая 3
+                            label(for="filter_f4").filter__select-subitem.flex
+                                .filter__select-subname.flex.filter__checkbox.relative.flex
+                                    input(type="checkbox" id="filter_f4" name="filter_f[]" value="Полумахровая 4")
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .filter__select-subtitle Полумахровая 4
+            .col-lg-3
+                .filter
+                    .filter__title &nbsp;
+                    button(type="submit").btn.filter__submit.width__full.flex
+                        <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 5H17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.6665 5.00001V3.33334C6.6665 2.89131 6.8421 2.46739 7.15466 2.15483C7.46722 1.84227 7.89114 1.66667 8.33317 1.66667H11.6665C12.1085 1.66667 12.5325 1.84227 12.845 2.15483C13.1576 2.46739 13.3332 2.89131 13.3332 3.33334V5.00001M15.8332 5.00001V16.6667C15.8332 17.1087 15.6576 17.5326 15.345 17.8452C15.0325 18.1577 14.6085 18.3333 14.1665 18.3333H5.83317C5.39114 18.3333 4.96722 18.1577 4.65466 17.8452C4.3421 17.5326 4.1665 17.1087 4.1665 16.6667V5.00001H15.8332Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        .btn__title Очистить
+        .archive__cart-row.row
+            each card in cards
+                .col-lg-3.card__col
+                    +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
+            each card in cards
+                .col-lg-3.card__col
+                    +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
+            each card in cards
+                .col-lg-3.card__col
+                    +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
+        .archive__pagination.flex
+            a(href="#!").page-numbers.prev.flex
+                <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1L1 7L6 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            span.page-numbers.current 1
+            a(href="#!").page-numbers.number 2
+            a(href="#!").page-numbers.number 3
+            a(href="#!").page-numbers.number 4
+            span.page-numbers.dots ...
+            a(href="#!").page-numbers.next.flex
+                <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L6 7L1 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+include watch.pug

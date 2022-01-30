@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Abalone Pink</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="relative">
@@ -32,11 +32,445 @@
         </div>
       </div>
     </header>
-    <section class="main-collection">
+    <div class="overlay bg" style="background-image: url('img/overlay/bg.png')">
       <div class="container">
-        <h2 class="section__title section__title_olive relative">Наша коллекция</h2>
-        <div class="section__subtitle"><span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контролем.</div>
-        <div class="main-collection__row row">
+        <div class="breadcrumb rank-math-breadcrumb"><a href="/">Главная</a>&nbsp;|&nbsp;<span>Коллекция пионов</span></div>
+        <h1 class="section__title section__title_white relative overlay__title archive__title">&nbsp;</h1>
+      </div>
+    </div>
+    <div class="archive">
+      <div class="container">
+        <form class="archive__form archive__filter-row row">
+          <div class="col-lg-6">
+            <div class="filter width__full">
+              <div class="filter__title">Поиск</div>
+              <div class="filter__item filter__search flex">
+                <div class="filter__search-icon flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.1111 18.2222C15.0385 18.2222 18.2222 15.0385 18.2222 11.1111C18.2222 7.18375 15.0385 4 11.1111 4C7.18375 4 4 7.18375 4 11.1111C4 15.0385 7.18375 18.2222 11.1111 18.2222Z" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 20L16.1333 16.1333" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+                <input class="width__full filter__search-input" type="text" placeholder="Название цветка">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter width__full">
+              <div class="filter__title">Диаметр цветка</div>
+              <div class="filter__item filter__select flex relative">
+                <div class="filter__select-item"></div><svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="filter__select-list absolute flex width__full">
+                  <label class="filter__select-subitem flex" for="filter_hh1">
+                    <div class="filter__select-subname flex filter__checkbox relative checked">
+                      <input type="checkbox" id="filter_hh1" name="filter_hh[]" checked value="15 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">15 см</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_hh2">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_hh2" name="filter_hh[]" value="16 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">16 см</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_hh3">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_hh3" name="filter_hh[]" value="17 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">17 см</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter width__full">
+              <div class="filter__title">Высота куста</div>
+              <div class="filter__item filter__select flex relative">
+                <div class="filter__select-item"></div><svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="filter__select-list absolute flex width__full">
+                  <label class="filter__select-subitem flex" for="filter_h1">
+                    <div class="filter__select-subname flex filter__checkbox relative checked">
+                      <input type="checkbox" id="filter_h1" name="filter_h[]" checked value="15 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">15 см</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_h2">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_h2" name="filter_h[]" value="16 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">16 см</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_h3">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_h3" name="filter_h[]" value="17 см"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">17 см</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter width__full">
+              <div class="filter__title">Группа</div>
+              <div class="filter__item filter__select flex relative">
+                <div class="filter__select-item"></div><svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="filter__select-list absolute flex width__full">
+                  <label class="filter__select-subitem flex" for="filter_g1">
+                    <div class="filter__select-subname flex filter__checkbox relative checked">
+                      <input type="checkbox" id="filter_g1" name="filter_g[]" checked value="Древовидные"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Древовидные</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_g2">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_g2" name="filter_g[]" value="Древовидные 2"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Древовидные 2</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_g3">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_g3" name="filter_g[]" value="Древовидные 3"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Древовидные 3</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter width__full">
+              <div class="filter__title">Сезон цветения</div>
+              <div class="filter__item filter__select flex relative">
+                <div class="filter__select-item"></div><svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="filter__select-list absolute flex width__full">
+                  <label class="filter__select-subitem flex" for="filter_s1">
+                    <div class="filter__select-subname flex filter__checkbox relative checked">
+                      <input type="checkbox" id="filter_s1" name="filter_s[]" checked value="Весна"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Весна</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_s2">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_s2" name="filter_s[]" value="Лето"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Лето</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_s3">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_s3" name="filter_s[]" value="Осень"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Осень</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_s4">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_s4" name="filter_s[]" value="Зима"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Зима</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter width__full">
+              <div class="filter__title">Форма цветка</div>
+              <div class="filter__item filter__select flex relative">
+                <div class="filter__select-item"></div><svg class="filter__select-arrow absolute" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L7 7L13 1" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="filter__select-list absolute flex width__full">
+                  <label class="filter__select-subitem flex" for="filter_f1">
+                    <div class="filter__select-subname flex filter__checkbox relative checked">
+                      <input type="checkbox" id="filter_f1" name="filter_f[]" checked value="Полумахровая 1"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Полумахровая 1</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_f2">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_f2" name="filter_f[]" value="Полумахровая 2"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Полумахровая 2</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_f3">
+                    <div class="filter__select-subname flex filter__checkbox relative">
+                      <input type="checkbox" id="filter_f3" name="filter_f[]" value="Полумахровая 3"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Полумахровая 3</div>
+                  </label>
+                  <label class="filter__select-subitem flex" for="filter_f4">
+                    <div class="filter__select-subname flex filter__checkbox relative flex">
+                      <input type="checkbox" id="filter_f4" name="filter_f[]" value="Полумахровая 4"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="filter__select-subtitle">Полумахровая 4</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="filter">
+              <div class="filter__title">&nbsp;</div>
+              <button class="btn filter__submit width__full flex" type="submit"><svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 5H17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.6665 5.00001V3.33334C6.6665 2.89131 6.8421 2.46739 7.15466 2.15483C7.46722 1.84227 7.89114 1.66667 8.33317 1.66667H11.6665C12.1085 1.66667 12.5325 1.84227 12.845 2.15483C13.1576 2.46739 13.3332 2.89131 13.3332 3.33334V5.00001M15.8332 5.00001V16.6667C15.8332 17.1087 15.6576 17.5326 15.345 17.8452C15.0325 18.1577 14.6085 18.3333 14.1665 18.3333H5.83317C5.39114 18.3333 4.96722 18.1577 4.65466 17.8452C4.3421 17.5326 4.1665 17.1087 4.1665 16.6667V5.00001H15.8332Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                <div class="btn__title">Очистить</div>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="archive__cart-row row">
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/4.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/2.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Callisto</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/2.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/5.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/3.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/4.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/4.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/1.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Angela Jo</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/5.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/3.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/6.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/7.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Angela Jo</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/7.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/8.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/8.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/1.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Callisto</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/4.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/2.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Callisto</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/2.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/5.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/3.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/4.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/4.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/1.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Angela Jo</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/5.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/3.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/6.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/7.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Angela Jo</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/7.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/8.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 card__col">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/8.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/1.jpg')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product.html">Callisto</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-3 card__col">
             <div class="card relative">
               <div class="card__inner">
@@ -142,140 +576,24 @@
             </div>
           </div>
         </div>
-        <div class="btn main-collection__btn flex">
-          <div class="btn__title">Подробнее</div><svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-        </div>
+        <div class="archive__pagination flex"><a class="page-numbers prev flex" href="#!"><svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 1L1 7L6 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a><span class="page-numbers current">1</span><a class="page-numbers number" href="#!">2</a><a class="page-numbers number" href="#!">3</a><a class="page-numbers number" href="#!">4</a><span class="page-numbers dots">...</span><a class="page-numbers next flex" href="#!"><svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6 7L1 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></div>
       </div>
-    </section>
-    <section class="main-inst bg" style="background-image:url('img/inst/bg.png')">
+    </div>
+    <div class="product-watch">
       <div class="container">
-        <h2 class="main-inst__title section__title flex"><span class="main-inst__title-span relative">Мы в</span><img class="main-inst__title-img" src="img/inst/inst.png" alt=""></h2>
-        <div class="main-inst__block flex">
-          <div class="main-inst__left width__full">
-            <div class="main-inst__avatar">
-              <div class="main-inst__avatar-img width__full bg" style="background-image:url('img/inst/avatar.png')"></div>
-            </div><a class="main-inst__name main-inst__name_line" href="#!">Pioni.pro</a>
-            <div class="main-inst__name">43 публикации</div>
-            <div class="main-inst__name">500 подписчиков</div>
-            <div class="main-inst__btn btn flex">
-              <div class="btn__title">В профиль</div>
-            </div>
-          </div>
-          <div class="main-inst__right width__full">
-            <div class="main-inst__card flex">
-              <div class="main-inst__card-item width__full">
-                <div class="main-inst__card-top flex">
-                  <div class="main-inst__card-logo bg" style="background-image:url('img/inst/avatar-sm.png')"></div>
-                  <div class="main-inst__card-title">Pioni.pro</div>
-                  <div class="main-inst__card-right flex"><span></span><span></span><span></span></div>
-                </div>
-                <div class="main-inst__card-img bg" style="background-image:url('img/inst/1.jpg')"></div>
-                <div class="main-inst__card-desc">Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...</div>
-              </div>
-              <div class="main-inst__card-item width__full">
-                <div class="main-inst__card-top flex">
-                  <div class="main-inst__card-logo bg" style="background-image:url('img/inst/avatar-sm.png')"></div>
-                  <div class="main-inst__card-title">Pioni.pro</div>
-                  <div class="main-inst__card-right flex"><span></span><span></span><span></span></div>
-                </div>
-                <div class="main-inst__card-img bg" style="background-image:url('img/inst/2.jpg')"></div>
-                <div class="main-inst__card-desc">Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-about">
-      <div class="container">
-        <h2 class="section__title section__title_olive relative">О нас</h2>
-        <div class="section__subtitle main-about__subtitle"><span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.</div>
-        <div class="row main-about__row">
-          <div class="col-lg-6">
-            <div class="main-about__img relative width__full"><img class="main-about__icon main-about__icon-left absolute" src="img/about/left.png" alt=""><img class="main-about__icon main-about__icon-right absolute" src="img/about/right.png" alt="">
-              <div class="main-about__img-tag main-about__img-tag-1 absolute">Дюбина Валентина</div>
-              <div class="main-about__img-tag main-about__img-tag-2 absolute">Дюбина Валентина</div>
-              <div class="main-about__img-item main-about__img-left bg width__full absolute" style="background-image:url('img/about/1.jpg')"></div>
-              <div class="main-about__img-item main-about__img-right bg width__full absolute" style="background-image:url('img/about/2.jpg')"></div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="main-about__tags">
-              <div class="main-about__tag main-about__tag_icon">
-                <div class="main-about__tag-inner flex">
-                  <div class="main-about__tag-left width__full">
-                    <div class="main-about__tag-img relative">
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/1.png')"></div>
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/11.png')"></div>
-                    </div>
-                  </div>
-                  <div class="main-about__tag-right width__full">
-                    <div class="main-about__tag-title">Более 500</div>
-                    <div class="main-about__tag-desc">видов луковиц выращено нашими руками, все луковицы проходили тщательный отбор </div>
-                  </div>
-                </div>
-              </div>
-              <div class="main-about__tag main-about__tag_default">
-                <div class="main-about__tag-inner flex">
-                  <div class="main-about__tag-left width__full">
-                    <div class="main-about__tag-img relative">
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/2.png')"></div>
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('')"></div>
-                    </div>
-                  </div>
-                  <div class="main-about__tag-right width__full">
-                    <div class="main-about__tag-title">17+ лет</div>
-                    <div class="main-about__tag-desc">опыта луковиц выращено нашими руками, все луковицы проходили тщательный отбор </div>
-                  </div>
-                </div>
-              </div>
-              <div class="main-about__tag main-about__tag_icon">
-                <div class="main-about__tag-inner flex">
-                  <div class="main-about__tag-left width__full">
-                    <div class="main-about__tag-img relative">
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/3.png')"></div>
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/33.png')"></div>
-                    </div>
-                  </div>
-                  <div class="main-about__tag-right width__full">
-                    <div class="main-about__tag-title">100%</div>
-                    <div class="main-about__tag-desc">видов луковиц выращено нашими руками, все луковицы проходили тщательный отбор </div>
-                  </div>
-                </div>
-              </div>
-              <div class="main-about__tag main-about__tag_default">
-                <div class="main-about__tag-inner flex">
-                  <div class="main-about__tag-left width__full">
-                    <div class="main-about__tag-img relative">
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('img/about/4.png')"></div>
-                      <div class="main-about__tag-img-item bg width__full absolute" style="background-image: url('')"></div>
-                    </div>
-                  </div>
-                  <div class="main-about__tag-right width__full">
-                    <div class="main-about__tag-title">8+ лет</div>
-                    <div class="main-about__tag-desc">опыта луковиц выращено нашими руками, все луковицы проходили тщательный отбор </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-stock bg" style="background-image:url('img/stock/bg.png')">
-      <div class="container">
-        <h2 class="section__title section__title_olive relative">Ассортимент агротехники</h2>
-        <div class="section__subtitle main-stock__subtitle"><span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.</div>
-        <div class="row main-stock__row">
-          <div class="col-lg-3 card__col">
+        <h2 class="section__title section__title_olive product-watch__title relative">Вы смотрели</h2>
+        <div class="section__subtitle product-watch__subtitle">Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались большим уважением.</div>
+        <div class="product-watch__row row">
+          <div class="col-lg-3">
             <div class="card relative">
               <div class="card__inner">
-                <div class="card__img relative card__img-hover"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/1.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/stock/2.png')"></div></a></div>
+                <div class="card__img relative"><a href="/product1.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/6.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
                 <div class="card__text flex relative"><a class="card__title" href="/product1.html">Callisto</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -283,12 +601,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 card__col">
+          <div class="col-lg-3">
             <div class="card relative">
               <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/2.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
+                <div class="card__img relative card__img-hover"><a href="/product1.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/cart/5.jpg')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/cart/4.jpg')"></div></a></div>
                 <div class="card__text flex relative"><a class="card__title" href="/product1.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -296,7 +614,20 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 card__col">
+          <div class="col-lg-3">
+            <div class="card relative">
+              <div class="card__inner">
+                <div class="card__img relative card__img-hover"><a href="/product1.html">
+                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/1.png')"></div>
+                    <div class="card__img-item card__img-2 absolute" style="background-image: url('img/stock/2.png')"></div></a></div>
+                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Alexander Woollcott</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
             <div class="card relative">
               <div class="card__inner">
                 <div class="card__img relative"><a href="/product1.html">
@@ -309,80 +640,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 card__col">
-            <div class="card relative">
-              <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/4.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
-                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Angela Jo</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 card__col">
-            <div class="card relative">
-              <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/5.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
-                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 card__col">
-            <div class="card relative">
-              <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/6.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
-                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 card__col">
-            <div class="card relative">
-              <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/7.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
-                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 card__col">
-            <div class="card relative">
-              <div class="card__inner">
-                <div class="card__img relative"><a href="/product1.html">
-                    <div class="card__img-item card__img-1 absolute" style="background-image: url('img/stock/8.png')"></div>
-                    <div class="card__img-item card__img-2 absolute" style="background-image: url('')"></div></a></div>
-                <div class="card__text flex relative"><a class="card__title" href="/product1.html">Abalone Pink</a><svg class="favorite card__favorite absolute" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.1751 2.43501C17.7204 1.98007 17.1805 1.61918 16.5863 1.37296C15.992 1.12673 15.3551 1 14.7119 1C14.0686 1 13.4317 1.12673 12.8375 1.37296C12.2432 1.61918 11.7033 1.98007 11.2486 2.43501L10.3049 3.37873L9.36114 2.43501C8.44263 1.51649 7.19685 1.00048 5.89787 1.00048C4.59889 1.00048 3.35311 1.51649 2.4346 2.43501C1.51608 3.35353 1.00006 4.5993 1.00006 5.89828C1.00006 7.19726 1.51608 8.44304 2.4346 9.36156L3.37832 10.3053L10.3049 17.2318L17.2314 10.3053L18.1751 9.36156C18.6301 8.90683 18.991 8.36693 19.2372 7.77269C19.4834 7.17845 19.6101 6.54152 19.6101 5.89828C19.6101 5.25505 19.4834 4.61812 19.2372 4.02388C18.991 3.42964 18.6301 2.88974 18.1751 2.43501V2.43501Z" stroke="#556444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn main-stock__btn flex">
-          <div class="btn__title">Подробнее</div><svg class="btn__svg main-collection__btn-svg" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
         </div>
       </div>
-    </section>
+    </div>
     <footer class="footer">
       <div class="footer-contacts">
         <div class="container">

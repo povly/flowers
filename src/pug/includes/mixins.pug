@@ -1,12 +1,12 @@
-mixin cardItem(cardClass, img, img2, title)
+mixin cardItem(link,cardClass, img, img2, title)
     .card.relative
         .card__inner
             .card__img.relative(class=cardClass)
-                a(href="#!")
+                a(href=link)
                     .card__img-item.card__img-1.absolute(style="background-image: url('" + img + "')")
                     .card__img-item.card__img-2.absolute(style="background-image: url('" + img2 + "')")
             .card__text.flex.relative
-                a(href="#!").card__title= title
+                a(href=link).card__title= title
                 +svgFavorite('card__favorite absolute')
 mixin svgFavorite(names)
     - const classes = 'favorite ' + names;
