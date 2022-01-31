@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll',()=>{
+        window.scrollY > 100
+        ?
+        header.classList.add('scroll')
+        :
+        header.classList.remove('scroll');
+    })
+
+
     const modalShows = document.querySelectorAll('.modal__show');
 
     function hideActiveModals(){

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4310907d-71c6-4549-a887-e6f67493d57c" name="povlu flowers" url="http://a333195.ftp.mchost.ru">
+        <fileTransfer rootFolder="/subdomains/flowers/httpdocs" host="a333195.ftp.mchost.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
