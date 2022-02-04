@@ -1,4 +1,4 @@
-.overlay.bg(style="background-image: url('img/overlay/bg.png')")
+.overlay.bg(style="background-image: url('img/overlay/bg.png')" data-bg-df="img/overlay/bg.png" data-bg-mb="img/overlay/bg2.png")
     .container
         .breadcrumb.rank-math-breadcrumb
             a(href="/") Главная
@@ -18,7 +18,7 @@
                             <path d="M20 20L16.1333 16.1333" stroke="#4E4E4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         input(type="text" placeholder="Название цветка").width__full.filter__search-input
-            .col-lg-3
+            .col-6.col-lg-3
                 .filter.width__full
                     .filter__title Диаметр цветка
                     .filter__item.filter__select.flex.relative
@@ -48,7 +48,7 @@
                                     <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 .filter__select-subtitle 17 см
-            .col-lg-3
+            .col-6.col-lg-3
                 .filter.width__full
                     .filter__title Высота куста
                     .filter__item.filter__select.flex.relative
@@ -145,7 +145,7 @@
                                     <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 .filter__select-subtitle Зима
-            .col-lg-3
+            .col-6.col-lg-3
                 .filter.width__full
                     .filter__title Форма цветка
                     .filter__item.filter__select.flex.relative
@@ -182,7 +182,7 @@
                                     <path d="M1 4.73333L3.78261 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 .filter__select-subtitle Полумахровая 4
-            .col-lg-3
+            .col-6.col-lg-3
                 .filter
                     .filter__title &nbsp;
                     button(type="submit").btn.filter__submit.width__full.flex
@@ -193,13 +193,13 @@
                         .btn__title Очистить
         .archive__cart-row.row
             each card in cards
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
             each card in cards
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
             each card in cards
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product.html', card.cardClass, card.img, card.img2, card.title)
         .archive__pagination.flex
             a(href="#!").page-numbers.prev.flex

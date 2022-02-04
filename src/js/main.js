@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg.style.backgroundImage = `url('${bg.getAttribute('data-bg-mb')}')`;
             }
         })
+
+        const overlay = document.querySelector('.overlay');
+        if (overlay){
+            if (windowIW > 1000){
+                overlay.style.backgroundImage = `url('${overlay.getAttribute('data-bg-df')}')`;
+            } else {
+                overlay.style.backgroundImage = `url('${overlay.getAttribute('data-bg-mb')}')`;
+            }
+        }
+
         if (windowIW < 1000) {
             window.addEventListener('scroll', () => {
                 const mainAboutTags = document.querySelectorAll('.main-about__tag');
@@ -43,17 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     const firstTagTop = firstTag.offsetTop - half;
                     const lastTagTop = lastTag.offsetTop + mainAboutTags[mainAboutTags.length - 1].offsetHeight - half;
 
-                    if (firstTagTop >= wScrollY){
+                    if (firstTagTop >= wScrollY) {
                         firstTag.classList.remove('active')
                     }
-                    if (lastTagTop <= wScrollY){
+                    if (lastTagTop <= wScrollY) {
                         lastTag.classList.remove('active')
                     }
                     if (firstTagTop <= wScrollY && lastTagTop >= wScrollY) {
                         mainAboutTags.forEach((tag, index) => {
                             let tagHeight = tag.scrollHeight;
                             let tagTop = tag.offsetTop;
-                            if (tagTop <= wScrollY + half && tagTop + tagHeight >= wScrollY){
+                            if (tagTop <= wScrollY + half && tagTop + tagHeight >= wScrollY) {
                                 const active = document.querySelector('.main-about__tag.scroll');
                                 if (active !== tag) {
                                     active.classList.remove('scroll');

@@ -1,4 +1,4 @@
-.overlay.bg(style="background-image: url('img/overlay/bg.png')")
+.overlay.bg(style="background-image: url('img/overlay/bg.png')" data-bg-df="img/overlay/bg.png" data-bg-mb="img/overlay/bg2.png")
     .container
         .breadcrumb.rank-math-breadcrumb
             a(href="/") Главная
@@ -29,10 +29,10 @@
                         .btn__title Очистить
         .archive__cart-row.row
             each stock in stocks
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product1.html', stock.cardClass, stock.img, stock.img2, stock.title)
             each stock in stocks
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product1.html', stock.cardClass, stock.img, stock.img2, stock.title)
         .archive__pagination.flex
             a(href="#!").page-numbers.prev.flex
