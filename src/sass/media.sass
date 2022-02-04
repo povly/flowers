@@ -1,4 +1,41 @@
 @media (max-width: 1000px)
+  .overlay
+    padding-top: 78px
+    padding-bottom: 115px
+  .elect
+    margin-top: -115px
+    &__title
+     margin-top: 105px
+    &__top
+      flex-direction: column
+      align-items: flex-start
+      &-title
+        margin-bottom: 15px
+    &__right
+      &-block
+        flex-direction: column
+      &-l
+        margin-right: 0
+      &-l, &-r
+        max-width: 100%
+    &__none
+      .product
+        &__table
+          &-btn
+            margin-top: 15px
+          &-name
+            width: 106px
+    &__overlay
+      max-width: calc(100% - 30px)
+      top: 69px
+      &-inner
+        padding: 23px 13px
+      &-title
+        font-size: 20px
+        line-height: 23px
+      &-subtitle
+        font-size: 16px
+        line-height: 19px
   .btn
     &__register
       width: 40px
@@ -102,6 +139,29 @@
             &__title
               display: block
 @media (max-width: 768px)
+  .elect
+    &__block
+      padding: 17px 15px 15px
+      flex-direction: column
+      &-left, &-right
+        max-width: 100%
+      &-left
+        margin-right: 0
+    &__img
+      height: 315px
+      margin-bottom: 10px
+    &__boost
+      width: 32px
+      height: 32px
+      .btn
+        &__svg
+          width: 19px
+          height: 19px
+  .product
+    &__subtitle
+      margin-bottom: 10px
+    &-watch
+      padding-bottom: 40px
   .card
     &__inner
       padding: 5px 5px 14px
@@ -147,6 +207,19 @@
       height: 157px
       &-item
         background-size: cover
+  .elect
+    &__link
+      display: none
+    &__right
+      &-link
+        display: table
+  .product
+    &__table
+      &-group
+        max-width: 100%
+        margin-bottom: 10px
+      &-btn
+        max-width: 100%
   .footer
     &-sec
       &__btns
@@ -166,6 +239,10 @@
         max-width: 100%
     &-stock
       &__btn
+        max-width: 100%
+  .elect
+    &__top
+      &-btn
         max-width: 100%
 @media (max-width: 350px)
   .card
