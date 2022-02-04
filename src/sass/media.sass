@@ -27,6 +27,45 @@
   .filter
     &__submit
       max-width: 100%
+  .product
+    &__overlay
+      padding-bottom: 49px
+    &__wrapper
+      &-inner
+        padding: 25px 15px 15px
+    &__block
+      flex-direction: column
+    &__left, &__right
+      max-width: 100%
+    &__left
+      margin-right: 0
+    &__img
+      height: 315px
+      background-size: contain
+      background-position: center
+    &__title
+      margin-top: 13px
+      margin-bottom: 20px
+    .product
+      &__table
+        &-btn
+          max-width: 100%
+    &__gallery
+      width: max-content
+      &_pc
+        display: none
+      &_mb
+        display: block
+      &-block
+        overflow: hidden
+        overflow-x: auto
+        padding-top: 10px
+      &-img
+        max-width: 100%
+        width: 134px
+    &__desc
+      h1,h2,h3,h4,h5,h6
+        margin-bottom: 10px
   .elect
     margin-top: -130px
     &__title
@@ -187,6 +226,8 @@
       margin-bottom: 10px
     &-watch
       padding-bottom: 40px
+    &__img
+      background-size: cover
   .card
     &__inner
       padding: 5px 5px 14px

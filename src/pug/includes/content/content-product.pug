@@ -1,4 +1,4 @@
-.overlay.bg(style="background-image: url('img/overlay/bg.png')" data-bg-df="img/overlay/bg.png" data-bg-mb="img/overlay/bg2.png")
+.overlay.product__overlay.bg(style="background-image: url('img/overlay/bg.png')" data-bg-df="img/overlay/bg.png" data-bg-mb="img/overlay/bg2.png")
     .container
         .breadcrumb.rank-math-breadcrumb
             a(href="/") Главная
@@ -25,6 +25,14 @@
                                 <path d="M11 8V14" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
                                 <path d="M14.2 11.2H7.79995" stroke="#556444" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>
+                        .product__gallery-block.product__gallery_mb
+                            .product__gallery.flex
+                                +productGalleryItem('active','img/product/1.jpg')
+                                +productGalleryItem('','img/product/2.jpg')
+                                +productGalleryItem('','img/product/3.jpg')
+                                +productGalleryItem('','img/product/2.jpg')
+                                +productGalleryItem('','img/product/3.jpg')
+                                +productGalleryItem('','img/product/3.jpg')
                     .product__right.width__full
                         h2.product__title Abalone Pink
                         .product__subtitle Характеристики:
@@ -37,7 +45,7 @@
                             +productTableGroup('Сезон цветения', 'Весна')
                             +productTableGroup('Высота куста', '66 см')
                             +productTableBtn
-                .product__gallery.flex
+                .product__gallery.product__gallery_pc.flex
                     +productGalleryItem('active','img/product/1.jpg')
                     +productGalleryItem('','img/product/2.jpg')
                     +productGalleryItem('','img/product/3.jpg')
