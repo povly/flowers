@@ -1,7 +1,8 @@
 .main.relative
     .main__bg.absolute.width__full(style="background-image:url('img/main/bg.png')")
     .container
-        .main__subtitle Растения для более искусного и знающего садовода.
+        h1.main__title Пионы мира
+        .main__subtitle совместная коллекция <br> Елены Новичковой и Джемала Думбадзе
         <svg class="main__svg main__icon" width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="19" height="28" rx="9.5" stroke="white" stroke-width="2"/>
         <path d="M10.5 6.75V12" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -42,7 +43,7 @@ section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
                 .main-inst__card.flex
                     .main-inst__card-item.width__full
                         .main-inst__card-top.flex
-                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
+                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar.png')")
                             .main-inst__card-title Pioni.pro
                             .main-inst__card-right.flex
                                 span
@@ -52,7 +53,7 @@ section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
                         .main-inst__card-desc Род Paeonia имеет очень богатую и долгую историю. Пионы уже в древние времена пользовались...
                     .main-inst__card-item.width__full
                         .main-inst__card-top.flex
-                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar-sm.png')")
+                            .main-inst__card-logo.bg(style="background-image:url('img/inst/avatar.png')")
                             .main-inst__card-title Pioni.pro
                             .main-inst__card-right.flex
                                 span
@@ -63,14 +64,16 @@ section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
 section.main-about
     .container
         h2.section__title.section__title_olive.relative О нас
-        .section__subtitle.main-about__subtitle <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
+        .section__subtitle.main-about__subtitle
+            | <span>Наша цель</span> - обеспечить людям доступ не только к красоте, которую они создают в саду, но и к генетическому материалу этих видов. У нас вы найдете что-то особенное для своего сада.
+            | Не являемся крупной корпорацией, <span>мы несём ответственность за предоставленный материал.</span>
         .row.main-about__row
             .col-lg-6
                 .main-about__img.relative.width__full
                     img(src="img/about/left.png", alt="").main-about__icon.main-about__icon-left.absolute
                     img(src="img/about/right.png", alt="").main-about__icon.main-about__icon-right.absolute
-                    .main-about__img-tag.main-about__img-tag-1.absolute Дюбина Валентина
-                    .main-about__img-tag.main-about__img-tag-2.absolute Дюбина Валентина
+                    .main-about__img-tag.main-about__img-tag-1.absolute Елена Новичкова
+                    .main-about__img-tag.main-about__img-tag-2.absolute Думбадзе Джемал
                     .main-about__img-item.main-about__img-left.bg.width__full.absolute(style="background-image:url('img/about/1.jpg')")
                     .main-about__img-item.main-about__img-right.bg.width__full.absolute(style="background-image:url('img/about/2.jpg')")
             .col-lg-6
@@ -80,7 +83,7 @@ section.main-about
 section.main-stock.bg(style="background-image:url('img/stock/bg.png')")
     .container
         h2.section__title.section__title_olive.relative Ассортимент агротехники
-        .section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа,  поэтому для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для васширокий ассортимент нужной продукции для растений.
+        .section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа, для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для вас широкий ассортимент нужной продукции для растений.
         .row.main-stock__row
             each stock in stocks
                 .col-lg-3.card__col
