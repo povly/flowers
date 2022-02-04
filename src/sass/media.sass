@@ -1,0 +1,164 @@
+@media (max-width: 1000px)
+  .btn
+    &__register
+      width: 40px
+      .btn
+        &__title
+          display: none
+  .row
+    --bs-gutter-x: 10px
+  .card
+    &__col
+      margin-bottom: 10px
+  .section
+    &__subtitle
+      margin-bottom: 15px
+  .main
+    &-collection
+      padding-top: 67px
+      padding-bottom: 53px
+      &__btn
+        margin-top: 15px
+    &-inst
+      padding-top: 61px
+      padding-bottom: 56px
+      background-position: top center
+      &__title
+        margin-bottom: 20px
+        &-span
+          margin-bottom: 10px
+      &__block
+        flex-wrap: wrap
+      &__left, &__right
+        max-width: 100%
+      &__left
+        margin-right: 0
+        margin-bottom: 40px
+        display: flex
+      &__avatar
+        width: 127px
+        height: 127px
+        margin-bottom: 0
+        margin-right: 10px
+      &__btn
+        margin-top: 8px
+      &__text
+        max-width: 180px
+        width: 100%
+      &__card
+        max-width: 600px
+        margin: 0 auto
+    &-about
+      padding-top: 33px
+      &__subtitle
+        margin-bottom: 15px
+      &__img
+        margin: 0 auto 20px
+      &__tag
+        &-inner
+          padding: 12px 12px 12px 6px
+    &-stock
+      padding-top: 35px
+      padding-bottom: 40px
+      background-size: 100% 900px
+      &__row
+        margin-right: calc(var(--bs-gutter-x) * -.5)
+        margin-left: calc(var(--bs-gutter-x) * -.5)
+        background-color: transparent
+        padding: 0
+      &__btn
+        margin-top: 15px
+  .footer
+    padding: 35px 0
+    &-contacts
+      &__block
+        padding-bottom: 0
+      &__subtitle
+        margin-bottom: 35px
+      &__logo
+        display: block
+        margin: 0 auto 25px
+      &__socials
+        position: relative
+        justify-content: center
+        bottom: auto
+        right: auto
+    &-sec
+      &__logo
+        display: none
+      &__block
+        flex-direction: column
+        flex-wrap: wrap
+      &__list
+        margin-bottom: 20px
+        flex-wrap: wrap
+        &-item
+          margin-bottom: 15px
+      &__btn
+        width: 167px
+        &-register
+          width: 345px
+          .btn
+            &__title
+              display: block
+@media (max-width: 768px)
+  .card
+    &__inner
+      padding: 5px 5px 14px
+    &__text
+      padding-top: 14px
+  .main
+    &-inst
+      &__card
+        flex-direction: column
+        max-width: 300px
+        &-item
+          max-width: 100%
+          &:not(:last-child)
+            margin-bottom: 20px
+    &-about
+      &__img
+        min-height: 333px
+        &-tag
+          &-1
+            left: 15px
+            bottom: 71px
+          &-2
+            right: 12px
+            top: 18px
+  .footer
+    &-sec
+      &__btns
+        flex-wrap: wrap
+        justify-content: center
+        margin: 0 -5px -10px
+      &__btn
+        margin: 0 5px 10px
+        &:not(:last-child)
+          margin-right: 5px
+@media (max-width: 576px)
+  .card
+    &__title
+      margin-right: 35px
+    &__img
+      height: 157px
+      &-item
+        background-size: cover
+  .footer
+    &-sec
+      &__btns
+        margin-left: -5px
+        margin-right: -5px
+      &__right
+        width: 100%
+      &__btn
+        width: calc(100% / 2 - 10px)
+        max-width: 100%
+        &-register
+          width: 100%
+@media (max-width: 375px)
+  .card
+    &__col
+      width: 200px
+      margin-left: auto
+      margin-right: auto

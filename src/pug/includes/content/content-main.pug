@@ -1,5 +1,5 @@
 .main.relative
-    .main__bg.absolute.width__full(style="background-image:url('img/main/bg.png')")
+    .main__bg.absolute.width__full(style="background-image:url('img/main/bg.png')" data-bg-pc="img/main/bg.png" data-bg-mb="img/main/bg2.png")
     .container
         h1.main__title Пионы мира
         .main__subtitle совместная коллекция <br> Елены Новичковой и Джемала Думбадзе
@@ -17,7 +17,7 @@ section.main-collection
         .section__subtitle <span>Эти элегантные и простые цветы</span> представлены в цветах от легкой пастельной лаванды, до резкого кардинально красного и даже желтого. <span>Все виды пионов особенные</span>, в частности те что выращиваются под нашим требовательным контролем.
         .main-collection__row.row
             each card in cards
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product.html',card.cardClass, card.img, card.img2, card.title)
         .btn.main-collection__btn.flex
             .btn__title Подробнее
@@ -25,20 +25,23 @@ section.main-collection
             <path d="M1 8H17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10 1L17 8L10 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-section.main-inst.bg(style="background-image:url('img/inst/bg.png')")
+section.main-inst.bg(style="background-image:url('img/inst/bg.png')" data-bg-pc="img/inst/bg.png" data-bg-mb="img/inst/bg2.png")
     .container
         h2.main-inst__title.section__title.flex
             span.main-inst__title-span.relative Мы в
             img(src="img/inst/inst.png", alt="").main-inst__title-img
         .main-inst__block.flex
             .main-inst__left.width__full
-                .main-inst__avatar
-                    .main-inst__avatar-img.width__full.bg(style="background-image:url('img/inst/avatar.png')")
-                a(href="#!").main-inst__name.main-inst__name_line Pioni.pro
-                .main-inst__name 43 публикации
-                .main-inst__name 500 подписчиков
-                .main-inst__btn.btn.flex
-                    .btn__title В профиль
+                .main-inst__avatar-block
+                    .main-inst__avatar
+                        .main-inst__avatar-img.width__full.bg(style="background-image:url('img/inst/avatar.png')")
+                .main-inst__text
+                    .main-inst__text-block
+                        a(href="#!").main-inst__name.main-inst__name_line Pioni.pro
+                        .main-inst__name 43 публикации
+                        .main-inst__name 500 подписчиков
+                    .main-inst__btn.btn.flex
+                        .btn__title В профиль
             .main-inst__right.width__full
                 .main-inst__card.flex
                     .main-inst__card-item.width__full
@@ -80,13 +83,13 @@ section.main-about
                 .main-about__tags
                     each about in abouts
                         +mainAboutTag(about.img, about.img2, about.imgClass, about.title, about.desc)
-section.main-stock.bg(style="background-image:url('img/stock/bg.png')")
+section.main-stock.bg(style="background-image:url('img/stock/bg.png')" data-bg-pc="img/stock/bg.png" data-bg-mb="img/stock/bg2.png")
     .container
         h2.section__title.section__title_olive.relative Ассортимент агротехники
         .section__subtitle.main-stock__subtitle <span>Почти все пионы требуют</span> отличного дренажа, для успеха выбирайте качественную технику и место по своему вкусу. Поэтому мы предоставляем для вас широкий ассортимент нужной продукции для растений.
         .row.main-stock__row
             each stock in stocks
-                .col-lg-3.card__col
+                .col-6.col-md-4.col-lg-3.card__col
                     +cardItem('/product1.html',stock.cardClass, stock.img, stock.img2, stock.title)
         .btn.main-stock__btn.flex
             .btn__title Подробнее

@@ -4,6 +4,8 @@ footer.footer
             .footer-contacts__block.relative
                 h2.section__title.section__title_black.relative Контакты
                 .section__subtitle.footer-contacts__subtitle Надеемся вы будете гордиться выращиванием растений, которые приобретаете у нас. Мы ценим посещение веб-сайта и благодарим тех, кто выбрал наши пионы. Будем рады ответить на все вопросы в наших соц. сетях.
+                a(href="/").flex.logo.footer-contacts__logo
+                    img(src="img/logo.png", alt="")
                 .footer-contacts__socials.absolute.flex
                     a(href="#!").flex.btn.btn__sm.footer-contacts__social
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,8 +50,8 @@ footer.footer
                             +btnSmSearch
                         a(href="/favorite2.html").btn.btn__sm.btn__favorite.footer-sec__btn.flex
                             +btnSmFavorite
-                        +btnRegister('footer-sec__btn')
-.modal.modal__auth.modal__form.fixed.width__full
+                        +btnRegister('footer-sec__btn footer-sec__btn-register')
+.modal.modal__auth.modal__form.width__full
     .container
         form.modal__form-item.width__full
             .modal__form-title Авторизация на сайте
@@ -64,7 +66,7 @@ footer.footer
                     .btn__title Войти
             .modal__form-group
                 .modal__form-link.modal__show(data-modal="register") Быстрая регистрация
-.modal.modal__register.modal__form.fixed.width__full
+.modal.modal__register.modal__form.width__full
     .container
         form.modal__form-item.width__full
             .modal__form-title Быстрая регистрация
@@ -82,7 +84,7 @@ footer.footer
                     .btn__title Зарегистрироваться
             .modal__form-group
                 .modal__form-link.modal__show(data-modal="auth") Авторизация на сайте
-.modal.modal__gallery.modal__gallery_product.fixed.width__full
+.modal.modal__gallery.modal__gallery_product.width__full
     .container
         .modal__gallery-top.width__full
             .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/1.jpg')")
@@ -99,7 +101,7 @@ footer.footer
             +modallGalleryImg('','img/cart/4.jpg')
             +modallGalleryImg('','img/cart/5.jpg')
             +modallGalleryImg('','img/cart/6.jpg')
-.modal.modal__gallery.modal__gallery_favorite1.fixed.width__full
+.modal.modal__gallery.modal__gallery_favorite1.width__full
     .container
         .modal__gallery-top.width__full
             .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/1.jpg')")
@@ -113,7 +115,7 @@ footer.footer
             +modallGalleryImg('active','img/cart/1.jpg')
             +modallGalleryImg('','img/cart/2.jpg')
             +modallGalleryImg('','img/cart/3.jpg')
-.modal.modal__gallery.modal__gallery_favorite2.fixed.width__full
+.modal.modal__gallery.modal__gallery_favorite2.width__full
     .container
         .modal__gallery-top.width__full
             .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/2.jpg')")
@@ -128,7 +130,7 @@ footer.footer
             +modallGalleryImg('','img/cart/5.jpg')
             +modallGalleryImg('','img/cart/4.jpg')
             +modallGalleryImg('','img/cart/3.jpg')
-.modal.modal__gallery.modal__gallery_favorite3.fixed.width__full
+.modal.modal__gallery.modal__gallery_favorite3.width__full
     .container
         .modal__gallery-top.width__full
             .modal__gallery-main.width__full.bg.relative(style="background-image: url('img/cart/3.jpg')")

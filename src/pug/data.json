@@ -53,7 +53,7 @@
 		{
 			"img":"img/about/1.png",
 			"img2":"img/about/1.png",
-			"imgClass":"main-about__tag_icon",
+			"imgClass":"main-about__tag_icon scroll",
 			"title":"Более 500 видов",
 			"desc":"Столько корневых систем выращено нашими руками, все проходили тщательный отбор"
 		},
